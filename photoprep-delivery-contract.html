@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PhotoPrep v1.0.0 — Source-verified product delivery agreement.">
+  <title>PhotoPrep v1.0.0 — Delivery Agreement</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --paper: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --brand: #2563eb;
+      --brand-soft: #eff6ff;
+      --ok: #059669;
+      --warn: #b45309;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 80px; }
+    .paper {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 40px 44px;
+      box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+    }
+    h1 { font-size: 1.85rem; line-height: 1.2; margin: 0 0 8px; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--brand-soft);
+      color: var(--brand);
+    }
+    h3 { font-size: 1rem; margin: 22px 0 8px; }
+    p, li { font-size: 0.96rem; }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+      padding: 16px;
+      background: var(--brand-soft);
+      border-radius: 12px;
+      border: 1px solid #dbeafe;
+    }
+    .meta > div {
+      font-size: 0.9rem;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .meta .wide { grid-column: 1 / -1; }
+    .meta strong {
+      display: block;
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.84em;
+      word-break: break-all;
+      overflow-wrap: anywhere;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: #ecfdf5;
+      color: var(--ok);
+      border: 1px solid #a7f3d0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 0.9rem;
+      table-layout: fixed;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    th { background: #f1f5f9; font-weight: 600; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 6px 0; }
+    .out { color: var(--warn); }
+    .sign {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 28px;
+    }
+    .sign-box {
+      border-top: 1px solid var(--ink);
+      padding-top: 8px;
+      min-height: 64px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 28px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+    a { color: var(--brand); word-break: break-all; }
+    @media (max-width: 640px) {
+      .paper { padding: 28px 20px; }
+      .sign { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: white; }
+      .paper { box-shadow: none; border: none; padding: 0; }
+      .wrap { padding: 0; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article class="paper">
+      <span class="badge">Source-verified · commit 2b4e676</span>
+      <h1>PhotoPrep v1.0.0<br>Product Delivery Agreement</h1>
+      <p>
+        This document defines the verified scope, deliverables, and acceptance criteria for
+        <strong>PhotoPrep</strong> Android application version <strong>1.0.0</strong>.
+        All product and technical statements are derived from the
+        <a href="https://github.com/iamusta/PhotoPrep">iamusta/PhotoPrep</a>
+        repository source code. No feature that is not present in the codebase is included in this agreement.
+      </p>
+
+      <div class="meta">
+        <div><strong>Product name</strong> PhotoPrep</div>
+        <div><strong>Version</strong> 1.0.0 (versionCode 1)</div>
+        <div><strong>Platform</strong> Android · minSdk 26 · targetSdk 35 · compileSdk 35</div>
+        <div><strong>Repository</strong> <a href="https://github.com/iamusta/PhotoPrep">iamusta/PhotoPrep</a></div>
+        <div><strong>Document date</strong> June 7, 2026</div>
+        <div class="wide"><strong>Package name</strong> <code>com.photoprep.photo.compress.resize.crop.editor</code></div>
+      </div>
+
+      <h2>1. Purpose</h2>
+      <p>
+        This agreement records what PhotoPrep v1.0.0 delivers at release.
+        It is a product scope and acceptance document — not legal advice.
+        It is intended for release planning, store submission, and scope control.
+      </p>
+
+      <h2>2. Product definition (verified)</h2>
+      <p>
+        PhotoPrep is an <strong>offline</strong> photo toolkit that runs entirely on the user’s device.
+        The codebase contains no user accounts, cloud upload pipeline, or in-app purchase flow.
+        Image processing runs on-device; results may be saved to the gallery or app storage.
+      </p>
+
+      <h3>2.1 Editor modes (10)</h3>
+      <table>
+        <thead>
+          <tr><th>Feature</th><th>Code enum</th><th>UI label (EN)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Compress</td><td><code>COMPRESS</code></td><td>Compress</td></tr>
+          <tr><td>Resize</td><td><code>RESIZE</code></td><td>Resize</td></tr>
+          <tr><td>Crop</td><td><code>CROP</code></td><td>Crop</td></tr>
+          <tr><td>Convert</td><td><code>CONVERT</code></td><td>Convert</td></tr>
+          <tr><td>Remove metadata</td><td><code>STRIP_METADATA</code></td><td>Remove metadata</td></tr>
+          <tr><td>Image to PDF</td><td><code>TO_PDF</code></td><td>Image to PDF</td></tr>
+          <tr><td>Watermark</td><td><code>WATERMARK</code></td><td>Watermark</td></tr>
+          <tr><td>Background blur</td><td><code>BACKGROUND_BLUR</code></td><td>Background blur</td></tr>
+          <tr><td>Batch rename</td><td><code>RENAME</code></td><td>Batch rename</td></tr>
+          <tr><td>HEIC to JPG</td><td><code>HEIC_TO_JPG</code></td><td>HEIC to JPG</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.2 Limits and formats</h3>
+      <ul>
+        <li>Batch limit: <strong>100 photos</strong> per operation (<code>AppConstants.BATCH_LIMIT</code>)</li>
+        <li>Output formats: JPEG, PNG, WEBP, HEIC, PDF</li>
+        <li>Gallery folder: <code>Pictures/PhotoPrep</code> (<code>AppConstants.OUTPUT_FOLDER</code>)</li>
+        <li>Compression presets: Maximum Saving, Balanced, High Quality, Custom; quick presets: Instagram, Email, Web</li>
+        <li>Crop ratios: Free, 1:1, 4:3, 16:9, 3:4, 4:3</li>
+        <li>Watermark styles: Corner, Diagonal; positions: all corners + center</li>
+        <li>History filters: All, Today, This Week, This Month</li>
+        <li>History auto-delete: Never, 30 days, 90 days</li>
+      </ul>
+
+      <h3>2.3 Navigation and screens</h3>
+      <ul>
+        <li>Bottom tabs: Home, History, Menu</li>
+        <li>Onboarding: 2 pages on first launch (completion stored in DataStore)</li>
+        <li>Before/After compare screen (can be disabled in Settings)</li>
+        <li>Menu actions: Rate the app, Send feedback, Share app, Settings, Privacy, Storage &amp; history, Accessibility, Help</li>
+        <li>Rating prompt: after <strong>3, 8, or 15</strong> successful processes; 30-day cooldown if declined</li>
+      </ul>
+
+      <h3>2.4 Languages (6 + system default)</h3>
+      <p>English, Turkish, Spanish, Chinese (zh-CN), Hindi, Arabic (RTL). Defined in Android <code>localeConfig</code>.</p>
+
+      <h3>2.5 Permissions (AndroidManifest)</h3>
+      <ul>
+        <li><code>READ_MEDIA_IMAGES</code> — photo picker (Android 13+)</li>
+        <li><code>READ_EXTERNAL_STORAGE</code> — maxSdkVersion 32</li>
+        <li><code>WRITE_EXTERNAL_STORAGE</code> — maxSdkVersion 28</li>
+      </ul>
+
+      <h3>2.6 Analytics (conditional)</h3>
+      <p>
+        If <code>app/google-services.json</code> exists, Firebase Analytics and Crashlytics are enabled
+        (<code>FIREBASE_ENABLED</code> build flag). Otherwise a no-op analytics implementation is used.
+        Events logged: <code>process_success</code>, <code>process_failed</code> (with mode and count metadata).
+      </p>
+
+      <h2>3. Release deliverables</h2>
+      <ul>
+        <li>All 10 editor modes accessible in a signed release build</li>
+        <li>Batch limit of 100 enforced consistently across modes</li>
+        <li>Settings working: language, theme, default quality/format, save to gallery, compare screen, EXIF strip, history retention, haptic feedback, text size</li>
+        <li>Privacy statement aligned with in-app copy: on-device processing; photos are not sent to a server</li>
+        <li>Release version <strong>1.0.0</strong> / versionCode <strong>1</strong></li>
+        <li>Signed AAB built via <code>./gradlew bundleRelease</code></li>
+        <li>Google Play listing claims match §2 feature list only</li>
+        <li>Privacy policy URL reachable from the app: <a href="https://iamusta.github.io/photoprep-privacy-policy.html">iamusta.github.io/photoprep-privacy-policy.html</a></li>
+        <li>Feedback email from Menu → Send feedback: <a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></li>
+        <li>Material 3 UI, RTL support, System/Light/Dark theme, content scale options</li>
+        <li>Adaptive launcher icon (white background + PNG foreground)</li>
+      </ul>
+
+      <h2>4. Acceptance criteria</h2>
+      <table>
+        <thead>
+          <tr><th>ID</th><th>Criterion</th><th>Verification</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>K-01</td><td>All 10 modes work in release APK/AAB</td><td>Manual smoke test</td></tr>
+          <tr><td>K-02</td><td>Batch limit cannot exceed 100 photos</td><td>Picker + UI label</td></tr>
+          <tr><td>K-03</td><td>6 languages + Arabic RTL layout</td><td>Language setting test</td></tr>
+          <tr><td>K-04</td><td>Compare screen can be disabled in Settings</td><td>Settings toggle</td></tr>
+          <tr><td>K-05</td><td>Privacy policy link opens without error</td><td>On-device test</td></tr>
+          <tr><td>K-06</td><td>Store listing text matches §2 features only</td><td>Listing review</td></tr>
+          <tr><td>K-07</td><td>Signed AAB uploads to Play Console</td><td>Console upload</td></tr>
+          <tr><td>K-08</td><td>Feedback email intent opens</td><td>Menu → Send feedback</td></tr>
+        </tbody>
+      </table>
+
+      <h2>5. Out of scope (not in codebase)</h2>
+      <ul class="out">
+        <li>User accounts, login, or cloud sync</li>
+        <li>Cloud storage or server-side image processing</li>
+        <li>In-app purchases, subscriptions, or Pro tier</li>
+        <li>iOS or web application</li>
+        <li>Built-in social platform integrations (system share intent and share-app text only)</li>
+        <li>Automatic background removal (portrait blur only)</li>
+        <li>AI-based editing</li>
+      </ul>
+
+      <h2>6. Reference URLs</h2>
+      <table>
+        <tbody>
+          <tr><th>Source repository</th><td><a href="https://github.com/iamusta/PhotoPrep">github.com/iamusta/PhotoPrep</a></td></tr>
+          <tr><th>Privacy policy</th><td><a href="https://iamusta.github.io/photoprep-privacy-policy.html">iamusta.github.io/photoprep-privacy-policy.html</a></td></tr>
+          <tr><th>Play Store package</th><td><a href="https://play.google.com/store/apps/details?id=com.photoprep.photo.compress.resize.crop.editor">Play Store listing URL</a></td></tr>
+          <tr><th>Feedback email</th><td><a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></td></tr>
+          <tr><th>Document version</th><td>1.1 — commit 2b4e676</td></tr>
+        </tbody>
+      </table>
+
+      <h2>7. Approval</h2>
+      <p>By signing below, the parties confirm they have read this agreement and accept the scope and criteria in §2–§5.</p>
+      <div class="sign">
+        <div class="sign-box">Provider — Name / Date / Signature</div>
+        <div class="sign-box">Client — Name / Date / Signature</div>
+      </div>
+
+      <footer>
+        <p>
+          © 2026 PhotoPrep · This document is for product alignment and release planning.
+          Product features are based solely on the referenced repository source code.
+          For legally binding terms, a separate agreement under applicable local law is required.
+        </p>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
