@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SnapPhoto v1.0.0 — Cross-functional product delivery contract derived from repository source code.">
+  <title>SnapPhoto v1.0.0 — Teslimat Sözleşmesi</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --paper: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --brand: #2563eb;
+      --brand-soft: #eff6ff;
+      --ok: #059669;
+      --warn: #b45309;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 80px; }
+    .paper {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 40px 44px;
+      box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+    }
+    h1 { font-size: 1.85rem; line-height: 1.2; margin: 0 0 8px; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--brand-soft);
+      color: var(--brand);
+    }
+    h3 { font-size: 1rem; margin: 22px 0 8px; }
+    p, li { font-size: 0.96rem; }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+      padding: 16px;
+      background: var(--brand-soft);
+      border-radius: 12px;
+      border: 1px solid #dbeafe;
+    }
+    .meta div { font-size: 0.9rem; }
+    .meta strong { display: block; color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: #ecfdf5;
+      color: var(--ok);
+      border: 1px solid #a7f3d0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 0.9rem;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f1f5f9; font-weight: 600; }
+    code { background: #f1f5f9; padding: 1px 6px; border-radius: 4px; font-size: 0.88em; }
+    .role {
+      border-left: 4px solid var(--brand);
+      padding: 14px 16px;
+      background: #fafafa;
+      border-radius: 0 10px 10px 0;
+      margin: 14px 0;
+    }
+    .role h3 { margin-top: 0; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 6px 0; }
+    .out { color: var(--warn); }
+    .sign {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 28px;
+    }
+    .sign-box {
+      border-top: 1px solid var(--ink);
+      padding-top: 8px;
+      min-height: 64px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 28px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+    a { color: var(--brand); }
+    @media print {
+      body { background: white; }
+      .paper { box-shadow: none; border: none; padding: 0; }
+      .wrap { padding: 0; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article class="paper">
+      <span class="badge">Kaynak doğrulamalı · commit ec28464</span>
+      <h1>SnapPhoto v1.0.0<br>Çok Disiplinli Ürün Teslimat Sözleşmesi</h1>
+      <p>
+        Bu belge; Product Owner (PO), UI/UX Designer, ASO Specialist, Google Play Operations (GPO)
+        ve Web Developer rollerinin <strong>SnapPhoto</strong> Android uygulaması (sürüm <strong>1.0.0</strong>)
+        kapsamında teslim ettiği/yükümlü olduğu çıktıları tanımlar.
+        Metindeki tüm ürün ve teknik ifadeler
+        <a href="https://github.com/iamusta/SnapPhoto">github.com/iamusta/SnapPhoto</a>
+        deposunun kaynak kodundan türetilmiştir. Kodda bulunmayan hiçbir özellik bu sözleşmeye dahil edilmemiştir.
+      </p>
+
+      <div class="meta">
+        <div><strong>Ürün adı</strong> SnapPhoto</div>
+        <div><strong>Sürüm</strong> 1.0.0 (versionCode 1)</div>
+        <div><strong>Paket adı</strong> <code>com.snapphoto.photo.compress.resize.crop.editor</code></div>
+        <div><strong>Platform</strong> Android · minSdk 26 · targetSdk 35 · compileSdk 35</div>
+        <div><strong>Depo</strong> <a href="https://github.com/iamusta/SnapPhoto">iamusta/SnapPhoto</a></div>
+        <div><strong>Belge tarihi</strong> 7 Haziran 2026</div>
+      </div>
+
+      <h2>1. Sözleşmenin amacı</h2>
+      <p>
+        Taraflar (PO, UI/UX, ASO, GPO, Web Dev), SnapPhoto v1.0.0’ın mağaza yayını ve kullanıcı deneyimi
+        için gerekli teslimatları netleştirir. Bu belge bir hukuk danışmanlığı yerine geçmez;
+        ürün kapsamı, kabul kriterleri ve sorumluluk matrisi olarak kullanılır.
+      </p>
+
+      <h2>2. Ürün tanımı (doğrulanmış)</h2>
+      <p>
+        SnapPhoto, kullanıcının cihazında <strong>çevrimdışı</strong> çalışan bir fotoğraf araç setidir.
+        Hesap oluşturma, bulut yükleme veya uygulama içi satın alma akışı kod tabanında yoktur.
+        Görüntü işleme cihaz üzerinde yapılır; sonuçlar galeriye veya uygulama depolama alanına kaydedilebilir.
+      </p>
+
+      <h3>2.1 Editör modları (10 adet)</h3>
+      <table>
+        <thead>
+          <tr><th>Mod</th><th>Kod enum</th><th>Kullanıcıya görünen ad (EN)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Sıkıştırma</td><td><code>COMPRESS</code></td><td>Compress</td></tr>
+          <tr><td>Yeniden boyutlandırma</td><td><code>RESIZE</code></td><td>Resize</td></tr>
+          <tr><td>Kırpma</td><td><code>CROP</code></td><td>Crop</td></tr>
+          <tr><td>Format dönüştürme</td><td><code>CONVERT</code></td><td>Convert</td></tr>
+          <tr><td>Metadata silme</td><td><code>STRIP_METADATA</code></td><td>Remove metadata</td></tr>
+          <tr><td>PDF</td><td><code>TO_PDF</code></td><td>Image to PDF</td></tr>
+          <tr><td>Filigran</td><td><code>WATERMARK</code></td><td>Watermark</td></tr>
+          <tr><td>Arka plan bulanıklaştırma</td><td><code>BACKGROUND_BLUR</code></td><td>Background blur</td></tr>
+          <tr><td>Toplu yeniden adlandırma</td><td><code>RENAME</code></td><td>Batch rename</td></tr>
+          <tr><td>HEIC → JPG</td><td><code>HEIC_TO_JPG</code></td><td>HEIC to JPG</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.2 Operasyonel limitler ve formatlar</h3>
+      <ul>
+        <li>Toplu işlem üst sınırı: <strong>100 fotoğraf</strong> (<code>AppConstants.BATCH_LIMIT</code>)</li>
+        <li>Desteklenen çıktı formatları: JPEG, PNG, WEBP, HEIC, PDF</li>
+        <li>Galeri klasör adı: <code>Pictures/SnapPhoto</code> (<code>AppConstants.OUTPUT_FOLDER</code>)</li>
+        <li>Sıkıştırma presetleri: Maximum Saving, Balanced, High Quality, Custom; hızlı presetler: Instagram, Email, Web</li>
+        <li>Kırpma oranları: Free, 1:1, 4:3, 16:9, 3:4, 4:3</li>
+        <li>Filigran: Corner / Diagonal; konumlar: alt-üst köşeler + merkez</li>
+        <li>Geçmiş filtreleri: All, Today, This Week, This Month</li>
+        <li>Geçmiş otomatik silme: Never, 30 gün, 90 gün</li>
+      </ul>
+
+      <h3>2.3 Navigasyon ve ekranlar</h3>
+      <ul>
+        <li>Alt sekmeler: Home, History, Menu</li>
+        <li>Onboarding: 2 sayfa (ilk açılışta; tamamlanma durumu DataStore’da saklanır)</li>
+        <li>Compare (önce/sonra) ekranı; ayarlardan kapatılabilir</li>
+        <li>Menü: Rate the app, Send feedback, Share app, Settings, Privacy, Storage &amp; history, Accessibility, Help</li>
+        <li>Değerlendirme istemi: başarılı işlem sayıları <strong>3, 8, 15</strong> olduğunda; reddedilirse 30 gün bekleme</li>
+      </ul>
+
+      <h3>2.4 Dil desteği (6 dil + sistem)</h3>
+      <p>English, Türkçe, Español, 中文 (zh-CN), हिन्दी, العربية (RTL). Android <code>localeConfig</code> ile tanımlıdır.</p>
+
+      <h3>2.5 İzinler (AndroidManifest)</h3>
+      <ul>
+        <li><code>READ_MEDIA_IMAGES</code> — fotoğraf seçimi (Android 13+)</li>
+        <li><code>READ_EXTERNAL_STORAGE</code> — maxSdkVersion 32</li>
+        <li><code>WRITE_EXTERNAL_STORAGE</code> — maxSdkVersion 28</li>
+      </ul>
+
+      <h3>2.6 Analitik (koşullu)</h3>
+      <p>
+        <code>app/google-services.json</code> dosyası mevcutsa Firebase Analytics ve Crashlytics etkinleşir
+        (<code>FIREBASE_ENABLED</code> build flag). Dosya yoksa analitik no-op implementasyonu kullanılır.
+        Olaylar: <code>process_success</code>, <code>process_failed</code> (mod ve sayım metadata ile).
+      </p>
+
+      <h2>3. Rol bazlı teslimat sözleşmesi</h2>
+
+      <div class="role">
+        <h3>3.1 Product Owner (PO)</h3>
+        <p><strong>Yükümlülük:</strong> v1.0.0 kapsamını aşağıdaki maddelerle sınırlı tutmak ve kabul testlerini onaylamak.</p>
+        <ul>
+          <li>10 editör modunun tamamının release build’de erişilebilir olması</li>
+          <li>Batch limit 100’ün tüm modlarda tutarlı uygulanması</li>
+          <li>Ayarların (dil, tema, varsayılan kalite/format, galeriye kaydet, compare, EXIF strip, geçmiş saklama, haptik, metin boyutu) çalışması</li>
+          <li>Gizlilik mesajının uygulama içi metinle uyumu: işleme cihazda; fotoğraflar sunucuya gönderilmez</li>
+          <li>Play Store’da satılacak sürümün <strong>1.0.0 / versionCode 1</strong> olması</li>
+        </ul>
+        <p><strong>PO kabul kriteri:</strong> Internal test track’te API 26–35 cihazlarda smoke test checklist’inin tamamı geçer.</p>
+      </div>
+
+      <div class="role">
+        <h3>3.2 UI/UX Designer</h3>
+        <p><strong>Yükümlülük:</strong> Material 3 tabanlı mevcut arayüzün tutarlılığını ve erişilebilirliğini garanti etmek.</p>
+        <ul>
+          <li>Tema: System / Light / Dark</li>
+          <li>İçerik ölçeği: Small (0,92×), Normal (1×), Large (1,12×)</li>
+          <li>RTL: Arapça layout desteği (<code>supportsRtl="true"</code>)</li>
+          <li>Ana ekran: 2 sütun feature grid; Watermark, Background blur, Batch rename, HEIC to JPG kartlarında “New” rozeti</li>
+          <li>Compare ekranı: sürükle-karşılaştır slider; istatistik rozetleri</li>
+          <li>Splash + onboarding akışı</li>
+          <li>Launcher ikonu: adaptive icon (beyaz arka plan + PNG foreground)</li>
+        </ul>
+        <p><strong>UX kabul kriteri:</strong> Kritik akış (seç → işle → sonuç / compare / galeri) 3 dokunuştan fazla gerektirmeden tamamlanır.</p>
+      </div>
+
+      <div class="role">
+        <h3>3.2 ASO Specialist (App Store Optimization)</h3>
+        <p><strong>Yükümlülük:</strong> Mağaza listelemesini uygulamanın gerçek özellikleriyle eşleştirmek; abartılı veya kodda olmayan iddia kullanmamak.</p>
+        <ul>
+          <li>Uygulama adı: <strong>SnapPhoto</strong></li>
+          <li>Önerilen anahtar kavramlar (ürün gerçeğine dayalı): offline photo editor, compress, resize, crop, convert, batch, metadata remover, PDF, watermark</li>
+          <li>6 dilde yerelleştirilmiş mağaza metni (uygulama içi 6 dil ile hizalı)</li>
+          <li>Short description: çevrimdışı, hesap gerektirmez, toplu işlem vurgusu</li>
+          <li>Feature graphic: 1024×500 px; app icon: 512×512 px (Play Console gereksinimleri)</li>
+          <li>Phone screenshots: gerçek uygulama ekran görüntüleri (mockup veya sahte UI yasak — PO onayı)</li>
+        </ul>
+        <p><strong>ASO kabul kriteri:</strong> Listing metnindeki her madde §2’deki mod listesinde karşılığı vardır.</p>
+      </div>
+
+      <div class="role">
+        <h3>3.3 GPO — Google Play Operations</h3>
+        <p><strong>Yükümlülük:</strong> Play Console yapılandırmasını teknik gerçeklere göre tamamlamak.</p>
+        <ul>
+          <li>Signed AAB yükleme (<code>./gradlew bundleRelease</code> çıktısı)</li>
+          <li>Package name: <code>com.snapphoto.photo.compress.resize.crop.editor</code></li>
+          <li>Data safety: fotoğraflar cihazda işlenir; hesap yok; uygulama içi satın alma yok</li>
+          <li>Firebase etkinse Analytics/Crashlytics Data safety’de beyan edilir</li>
+          <li>Content rating anketi: fotoğraf düzenleme aracı profiline uygun tamamlanır</li>
+          <li>Gizlilik politikası URL’si: <a href="https://sites.google.com/view/snapphoto-privacy">sites.google.com/view/snapphoto-privacy</a> (uygulama içi link ile aynı)</li>
+          <li>Internal testing → production yayın sırası</li>
+        </ul>
+        <p><strong>GPO kabul kriteri:</strong> Play Console’da “Ready to publish” engeli kalmaz (politika, imza, metadata).</p>
+      </div>
+
+      <div class="role">
+        <h3>3.4 Web Developer</h3>
+        <p><strong>Yükümlülük:</strong> Dış yüzey web varlıklarını uygulama ve mağaza gereksinimleriyle senkron tutmak.</p>
+        <ul>
+          <li>Gizlilik politikası sayfası (<code>PRIVACY_POLICY_URL</code>) erişilebilir ve güncel</li>
+          <li>Politika metni: cihaz-içi işleme, izinler, isteğe bağlı Firebase, iletişim</li>
+          <li>Destek e-postası (uygulama içi feedback): <a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></li>
+          <li>Play Store linki: <a href="https://play.google.com/store/apps/details?id=com.snapphoto.photo.compress.resize.crop.editor">Play Store listing URL</a></li>
+          <li>İsteğe bağlı: GitHub Pages’te bu teslimat sözleşmesinin barındırılması</li>
+        </ul>
+        <p><strong>Web kabul kriteri:</strong> Gizlilik URL’si uygulamadan açıldığında 404 vermez; HTTPS geçerlidir.</p>
+      </div>
+
+      <h2>4. Kabul kriterleri matrisi</h2>
+      <table>
+        <thead>
+          <tr><th>ID</th><th>Kriter</th><th>Sorumlu rol</th><th>Doğrulama</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>K-01</td><td>10 mod release APK/AAB’de çalışır</td><td>PO + Dev</td><td>Manuel test</td></tr>
+          <tr><td>K-02</td><td>100 foto batch limiti aşılamaz</td><td>PO</td><td>Picker + UI metni</td></tr>
+          <tr><td>K-03</td><td>6 dil + RTL Arapça</td><td>UI/UX + PO</td><td>Dil ayarı testi</td></tr>
+          <tr><td>K-04</td><td>Compare ekranı ayar ile kapatılabilir</td><td>PO</td><td>Settings toggle</td></tr>
+          <tr><td>K-05</td><td>Gizlilik politikası linki çalışır</td><td>Web + GPO</td><td>Cihaz testi</td></tr>
+          <tr><td>K-06</td><td>Store listing = gerçek özellikler</td><td>ASO + PO</td><td>Metin denetimi</td></tr>
+          <tr><td>K-07</td><td>Signed AAB Play’e yüklenir</td><td>GPO</td><td>Console upload</td></tr>
+          <tr><td>K-08</td><td>Feedback e-postası açılır</td><td>Web</td><td>Menu → Send feedback</td></tr>
+        </tbody>
+      </table>
+
+      <h2>5. Kapsam dışı (açıkça kodda yok)</h2>
+      <ul class="out">
+        <li>Kullanıcı hesabı / giriş / senkronizasyon</li>
+        <li>Bulut depolama veya sunucu tarafı görüntü işleme</li>
+        <li>Uygulama içi satın alma, abonelik, Pro sürüm</li>
+        <li>iOS / web uygulaması</li>
+        <li>Sosyal paylaşım platformu entegrasyonu (yalnızca sistem paylaşım intent’i ve share app metni vardır)</li>
+        <li>Otomatik arka plan kaldırma (yalnızca portrait blur vardır)</li>
+        <li>AI tabanlı düzenleme</li>
+      </ul>
+
+      <h2>6. Referans URL’ler</h2>
+      <table>
+        <tbody>
+          <tr><th>Kaynak depo</th><td><a href="https://github.com/iamusta/SnapPhoto">https://github.com/iamusta/SnapPhoto</a></td></tr>
+          <tr><th>Gizlilik politikası</th><td><a href="https://sites.google.com/view/snapphoto-privacy">https://sites.google.com/view/snapphoto-privacy</a></td></tr>
+          <tr><th>Play Store (paket)</th><td><a href="https://play.google.com/store/apps/details?id=com.snapphoto.photo.compress.resize.crop.editor">store/apps/details?id=com.snapphoto.photo.compress.resize.crop.editor</a></td></tr>
+          <tr><th>Feedback e-posta</th><td><a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></td></tr>
+          <tr><th>Belge sürümü</th><td>1.0 — commit ec28464</td></tr>
+        </tbody>
+      </table>
+
+      <h2>7. Onay</h2>
+      <p>Aşağıdaki imza alanları, ilgili rolün §3 ve §4 maddelerini okuduğunu ve teslimatları kabul ettiğini belirtir.</p>
+      <div class="sign">
+        <div class="sign-box">Product Owner — Ad / Tarih / İmza</div>
+        <div class="sign-box">UI/UX Designer — Ad / Tarih / İmza</div>
+        <div class="sign-box">ASO Specialist — Ad / Tarih / İmza</div>
+        <div class="sign-box">GPO — Ad / Tarih / İmza</div>
+        <div class="sign-box">Web Developer — Ad / Tarih / İmza</div>
+        <div class="sign-box">Teknik lider / Dev — Ad / Tarih / İmza</div>
+      </div>
+
+      <footer>
+        <p>
+          © 2026 SnapPhoto · Bu belge bilgilendirme ve proje hizalama amaçlıdır.
+          Ürün özellikleri yalnızca belirtilen Git commit’indeki kaynak koda dayanır.
+          Hukuki bağlayıcılık için yerel mevzuata uygun ayrı sözleşme düzenlenmelidir.
+        </p>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
