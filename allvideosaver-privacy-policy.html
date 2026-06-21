@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Privacy Policy for All Video Saver — TikTok and social media video downloader for Android.">
+<title>Privacy Policy — All Video Saver</title>
+<style>
+  :root {
+    --ink: #0f172a;
+    --muted: #475569;
+    --paper: #fdf2f8;
+    --card: #ffffff;
+    --accent: #db2777;
+    --accent-soft: #fce7f3;
+    --line: #e2e8f0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid var(--accent-soft);
+    padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { font-weight: 700; font-size: 1.05rem; }
+  .badge {
+    font-size: .72rem; font-weight: 600; text-transform: uppercase;
+    color: var(--accent); background: var(--accent-soft);
+    border: 1px solid #fbcfe8; padding: 5px 12px; border-radius: 6px;
+  }
+  .hero {
+    max-width: 820px; margin: 0 auto; padding: 48px 24px 24px;
+  }
+  .hero h1 { font-size: 2rem; margin-bottom: 8px; }
+  .hero .date { color: var(--muted); font-size: .9rem; margin-bottom: 20px; }
+  .summary {
+    background: var(--card); border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px; padding: 20px 24px; margin-bottom: 32px;
+  }
+  .content { max-width: 820px; margin: 0 auto; padding: 0 24px 80px; }
+  .section {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 28px 28px 24px; margin-bottom: 16px;
+  }
+  .section-num {
+    font-size: .72rem; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 6px;
+  }
+  h2 { font-size: 1.15rem; margin-bottom: 12px; }
+  p { margin-bottom: 12px; color: var(--ink); }
+  ul { padding-left: 1.3rem; margin-bottom: 12px; }
+  li { margin: 6px 0; }
+  code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: .88em; }
+  .callout {
+    background: var(--accent-soft); border-radius: 10px;
+    padding: 14px 16px; margin: 14px 0; border: 1px solid #fbcfe8;
+  }
+  .contact {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 24px; margin-top: 8px;
+  }
+  .contact a { color: var(--accent); font-weight: 600; }
+  footer {
+    max-width: 820px; margin: 0 auto; padding: 24px;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="logo">All Video Saver</span>
+  <span class="badge">Privacy Policy</span>
+</header>
+
+<div class="hero">
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective date: June 21, 2026 · Last updated: June 21, 2026</p>
+  <div class="summary">
+    <p><strong>The short version:</strong> All Video Saver downloads videos to your device. We do not require an account. Download history and preferences are stored locally on your phone. To resolve video links, the app sends the pasted URL to a third-party API over the internet — we do not operate that API and do not receive your downloads on our own servers.</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <section class="section" id="s1">
+    <p class="section-num">01</p>
+    <h2>Information We Collect</h2>
+    <p>All Video Saver is designed with a minimal data footprint:</p>
+    <p><strong>Information you provide directly:</strong></p>
+    <ul>
+      <li><strong>Video URLs</strong> you paste or share into the app — used solely to resolve and download the requested video.</li>
+      <li>No account creation, login, or email registration is required to use the app.</li>
+      <li>If you choose <strong>Send feedback</strong> in the Menu, your email app may send a message to our support address. That message is handled by your email provider, not stored inside the app.</li>
+    </ul>
+    <p><strong>Information stored locally on your device:</strong></p>
+    <ul>
+      <li><strong>Download history (local only):</strong> A Room database stores metadata about downloads — title, author, thumbnail URL, source URL, file path, content URI, file size, platform, status, progress, and timestamps. This data stays on your device unless you share a file yourself.</li>
+      <li><strong>Downloaded video files:</strong> Saved to <code>Movies/AllVideoSaver</code> on your device via the Android MediaStore API (or equivalent legacy path on older Android versions).</li>
+    </ul>
+    <p><strong>Information sent over the network:</strong></p>
+    <ul>
+      <li>The pasted social-media URL is sent to <code>https://www.tikwm.com/api/</code> to obtain a direct video download link. We do not control this third-party service.</li>
+      <li>The resolved video file is downloaded directly to your device from the CDN URL returned by that service.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="s2">
+    <p class="section-num">02</p>
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>To resolve pasted URLs and download requested videos to your device.</li>
+      <li>To display download progress, history, thumbnails, and file sizes in the app.</li>
+      <li>To enable Share, View, wallpaper, and ringtone actions you initiate.</li>
+      <li>To show background-download notifications when WorkManager is running a download job.</li>
+    </ul>
+    <p>We do not sell, rent, or trade your data. All Video Saver does not display advertisements in the current codebase.</p>
+  </section>
+
+  <section class="section" id="s3">
+    <p class="section-num">03</p>
+    <h2>Video Download Process</h2>
+    <div class="callout">
+      <p><strong>Downloaded videos are stored on your device.</strong> All Video Saver does not operate cloud storage for your videos.</p>
+    </div>
+    <p><strong>Permissions declared in the app manifest:</strong></p>
+    <ul>
+      <li><code>INTERNET</code> — required to resolve URLs and download video files.</li>
+      <li><code>ACCESS_NETWORK_STATE</code> — standard network connectivity check.</li>
+      <li><code>POST_NOTIFICATIONS</code> — optional background download progress notifications (Android 13+).</li>
+      <li><code>READ_EXTERNAL_STORAGE</code> (maxSdkVersion 32) and <code>WRITE_EXTERNAL_STORAGE</code> (maxSdkVersion 28) — legacy storage access on older Android versions.</li>
+    </ul>
+    <p><strong>What happens when you download:</strong></p>
+    <ul>
+      <li>You paste or share a video link on the Home screen.</li>
+      <li>The app sends the URL to the third-party resolver API and receives video metadata and a download URL.</li>
+      <li>The MP4 file is saved to <code>Movies/AllVideoSaver</code> on your device.</li>
+      <li>A history record is saved in the local Room database.</li>
+      <li>You may share the file using Android’s standard share sheet via a <code>FileProvider</code>.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="s4">
+    <p class="section-num">04</p>
+    <h2>Third-Party Services</h2>
+    <ul>
+      <li><strong>TikWM API (<code>tikwm.com</code>):</strong> Used to resolve TikTok and compatible social video links. Their privacy practices apply to requests sent to their servers. We recommend reviewing their terms independently.</li>
+      <li><strong>Google Play:</strong> App distribution, updates, and store interactions are subject to Google’s policies.</li>
+      <li><strong>Coil:</strong> Open-source library for loading thumbnail images in the UI — operates on-device.</li>
+    </ul>
+    <p>All Video Saver does <strong>not</strong> integrate advertising SDKs or in-app billing in the current codebase.</p>
+  </section>
+
+  <section class="section" id="s5">
+    <p class="section-num">05</p>
+    <h2>Analytics &amp; Crash Reporting</h2>
+    <p>The current codebase does <strong>not</strong> include Firebase Analytics, Crashlytics, or other third-party analytics SDKs. No automatic crash or usage telemetry is sent to the developer by default.</p>
+  </section>
+
+  <section class="section" id="s6">
+    <p class="section-num">06</p>
+    <h2>Advertising &amp; In-App Purchases</h2>
+    <p>All Video Saver does <strong>not</strong> display advertisements and does <strong>not</strong> offer in-app purchases or subscriptions in the current codebase.</p>
+  </section>
+
+  <section class="section" id="s7">
+    <p class="section-num">07</p>
+    <h2>Data Storage &amp; Security</h2>
+    <ul>
+      <li>Download history and app data are stored locally in the app sandbox and Room database.</li>
+      <li>Video files in <code>Movies/AllVideoSaver</code> persist until you delete them in the app, through your gallery, or by uninstalling.</li>
+      <li>Deleting a history item removes the database record and attempts to delete the associated file.</li>
+      <li>The app manifest sets <code>android:allowBackup="true"</code>. Android may back up app data when device backup is enabled.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="s8">
+    <p class="section-num">08</p>
+    <h2>Children's Privacy</h2>
+    <p>All Video Saver is not directed at children under 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personal information from children.</p>
+  </section>
+
+  <section class="section" id="s9">
+    <p class="section-num">09</p>
+    <h2>Your Rights</h2>
+    <ul>
+      <li><strong>Access:</strong> Your download history is visible in the History tab.</li>
+      <li><strong>Deletion:</strong> Delete individual items in History or uninstall the app to remove local app data.</li>
+      <li><strong>GDPR / CCPA:</strong> We do not sell personal information. For data processed by third-party APIs (e.g. TikWM), refer to their policies.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="s10">
+    <p class="section-num">10</p>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Material changes will be reflected in the “Last updated” date above. Continued use of the app after an update constitutes acceptance of the revised policy.</p>
+    <p>The current version is accessible via <strong>Menu → Privacy → Privacy policy</strong> inside the app.</p>
+  </section>
+
+  <section class="section" id="s11">
+    <p class="section-num">11</p>
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p>Questions about this Privacy Policy?</p>
+      <p><a href="mailto:support@allvideosaver.app">support@allvideosaver.app</a></p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <span>© 2026 All Video Saver. All rights reserved.</span>
+  <span><a href="allvideosaver-delivery-contract.html">Delivery Agreement</a></span>
+</footer>
+
+</body>
+</html>
