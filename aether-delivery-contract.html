@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AETHER v1.0.0 — Source-verified product delivery agreement.">
+  <title>AETHER v1.0.0 — Delivery Agreement</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --paper: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --brand: #2563eb;
+      --brand-soft: #eff6ff;
+      --ok: #059669;
+      --warn: #b45309;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 80px; }
+    .paper {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 40px 44px;
+      box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+    }
+    h1 { font-size: 1.85rem; line-height: 1.2; margin: 0 0 8px; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--brand-soft);
+      color: var(--brand);
+    }
+    h3 { font-size: 1rem; margin: 22px 0 8px; }
+    p, li { font-size: 0.96rem; }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+      padding: 16px;
+      background: var(--brand-soft);
+      border-radius: 12px;
+      border: 1px solid #dbeafe;
+    }
+    .meta > div {
+      font-size: 0.9rem;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .meta .wide { grid-column: 1 / -1; }
+    .meta strong {
+      display: block;
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.84em;
+      word-break: break-all;
+      overflow-wrap: anywhere;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: #ecfdf5;
+      color: var(--ok);
+      border: 1px solid #a7f3d0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 0.9rem;
+      table-layout: fixed;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    th { background: #f1f5f9; font-weight: 600; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 6px 0; }
+    .out { color: var(--warn); }
+    .sign {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 28px;
+    }
+    .sign-box {
+      border-top: 1px solid var(--ink);
+      padding-top: 8px;
+      min-height: 64px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 28px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+    a { color: var(--brand); word-break: break-all; }
+    @media (max-width: 640px) {
+      .paper { padding: 28px 20px; }
+      .sign { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: white; }
+      .paper { box-shadow: none; border: none; padding: 0; }
+      .wrap { padding: 0; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article class="paper">
+      <span class="badge">Source-verified · iamusta/aether</span>
+      <h1>AETHER v1.0.0<br>Product Delivery Agreement</h1>
+      <p>
+        This document defines the verified scope, deliverables, and acceptance criteria for
+        <strong>AETHER</strong> Android application version <strong>1.0.0</strong>.
+        All product and technical statements are derived from the
+        <a href="https://github.com/iamusta/aether">iamusta/aether</a>
+        repository source code. No feature that is not present in the codebase is included in this agreement.
+      </p>
+
+      <div class="meta">
+        <div><strong>Product name</strong> AETHER</div>
+        <div><strong>Version</strong> 1.0.0</div>
+        <div><strong>Platform</strong> Android · Godot 4.7 · arm64-v8a</div>
+        <div><strong>Repository</strong> <a href="https://github.com/iamusta/aether">iamusta/aether</a></div>
+        <div><strong>Document date</strong> September 6, 2026</div>
+        <div class="wide"><strong>Package name</strong> <code>com.gamegoal.aether</code></div>
+      </div>
+
+      <h2>1. Purpose</h2>
+      <p>
+        This agreement records what AETHER v1.0.0 delivers at release.
+        It is a product scope and acceptance document — not legal advice.
+        It is intended for release planning, store submission, and scope control.
+      </p>
+
+      <h2>2. Product definition (verified)</h2>
+      <p>
+        AETHER is a <strong>one-thumb endless neon survivor</strong>. Combat runs on the device.
+        An anonymous Firebase account is created on launch. Google Sign-In is optional.
+        Essence, shop, ships, and records sync to a Firestore document keyed by that uid.
+        Consumable Essence packs are sold through Google Play Billing. There are no ads.
+      </p>
+
+      <h3>2.1 Screens</h3>
+      <table>
+        <thead>
+          <tr><th>Screen</th><th>Code</th><th>Role</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Home</td><td>menu</td><td>Play, daily rift, Essence chip</td></tr>
+          <tr><td>Shop</td><td>shop</td><td>Permanent upgrades and weapon unlocks bought with Essence</td></tr>
+          <tr><td>Collection</td><td>stats</td><td>Ships, records, achievements</td></tr>
+          <tr><td>Settings</td><td>settings</td><td>Account, language, audio, haptics, legal links</td></tr>
+          <tr><td>Essence store</td><td>essence</td><td>Play Billing packs — not a bottom tab</td></tr>
+          <tr><td>Arena</td><td>game</td><td>Endless waves, bosses, level cards</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.2 Combat (verified)</h3>
+      <ul>
+        <li>One-finger move; auto-aim spark; dash</li>
+        <li>Waves scale HP, speed, and damage; camping triggers a closing siege</li>
+        <li>Bosses: Hollow King, Prism Wyrm, Rift Heart, Nexus Sentinel, Echo, Void Choir</li>
+        <li>Level-up cards are run-only; shop upgrades persist</li>
+        <li>Ships change hull and colour only — they do not add combat power</li>
+      </ul>
+
+      <h3>2.3 Fleet (15 ships)</h3>
+      <p>Default <code>cyan</code> (Aether). Buy with Essence: ember, violet, toxic, magenta, frost, gold, solar, mono, abyss, venom, tear, prism, obsidian, aurora.</p>
+
+      <h3>2.4 Essence packs (Play Billing, consumable)</h3>
+      <table>
+        <thead>
+          <tr><th>SKU</th><th>Essence</th><th>Tag</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>aether_essence_50</code></td><td>50</td><td>—</td></tr>
+          <tr><td><code>aether_essence_100</code></td><td>100</td><td>—</td></tr>
+          <tr><td><code>aether_essence_150</code></td><td>150</td><td>—</td></tr>
+          <tr><td><code>aether_essence_200</code></td><td>200</td><td>—</td></tr>
+          <tr><td><code>aether_essence_300</code></td><td>300</td><td>—</td></tr>
+          <tr><td><code>aether_essence_500</code></td><td>500</td><td>—</td></tr>
+          <tr><td><code>aether_essence_1000</code></td><td>1,000</td><td>popular</td></tr>
+          <tr><td><code>aether_essence_2800</code></td><td>2,800</td><td>—</td></tr>
+          <tr><td><code>aether_essence_7500</code></td><td>7,500</td><td>best</td></tr>
+        </tbody>
+      </table>
+      <p>Grant then consume. Duplicate tokens are ignored. Receipts sync in the <code>iap</code> field of the user document.</p>
+
+      <h3>2.5 Languages (10)</h3>
+      <p>Turkish, English, German, French, Spanish, Italian, Portuguese, Dutch, Swedish, Indonesian. System language is used when it matches; otherwise English.</p>
+
+      <h3>2.6 Permissions</h3>
+      <ul>
+        <li><code>INTERNET</code> — Firebase Auth, Firestore, Play Billing</li>
+        <li><code>VIBRATE</code> — optional haptics</li>
+      </ul>
+
+      <h3>2.7 Account and cloud</h3>
+      <ul>
+        <li>Anonymous Firebase Auth on launch</li>
+        <li>Optional Google Sign-In (name, email, photo)</li>
+        <li>Firestore collection <code>leaderboard</code>, document id = uid</li>
+        <li>Local save: <code>user://aether.save</code></li>
+        <li>Account switch resets shop, Essence, and tutorial to that account’s cloud row</li>
+      </ul>
+
+      <h3>2.8 Analytics</h3>
+      <p>No Firebase Analytics or Crashlytics in the Godot client. Play Store / Play Billing diagnostics follow Google’s policies.</p>
+
+      <h2>3. Release deliverables</h2>
+      <ul>
+        <li>Playable endless run with shop, collection, settings, and Essence store</li>
+        <li>15 ships; Essence-only cosmetic hulls</li>
+        <li>Nine consumable Essence SKUs listed in §2.4</li>
+        <li>10 languages</li>
+        <li>Privacy policy URL reachable from Settings and the Essence page: <a href="https://iamusta.github.io/aether-privacy-policy.html">iamusta.github.io/aether-privacy-policy.html</a></li>
+        <li>This delivery agreement reachable from the same screens</li>
+        <li>Share card after a run via Android share sheet</li>
+        <li>Release version <strong>1.0.0</strong> / package <code>com.gamegoal.aether</code></li>
+        <li>Google Play listing claims match §2 only</li>
+        <li>Contact: <a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></li>
+      </ul>
+
+      <h2>4. Acceptance criteria</h2>
+      <table>
+        <thead>
+          <tr><th>ID</th><th>Criterion</th><th>Verification</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>K-01</td><td>Home, shop, collection, settings, and a run work in the signed APK/AAB</td><td>Manual smoke test</td></tr>
+          <tr><td>K-02</td><td>Essence page lists all 9 SKUs</td><td>Essence store UI</td></tr>
+          <tr><td>K-03</td><td>10 languages switch in Settings</td><td>Language grid</td></tr>
+          <tr><td>K-04</td><td>Privacy and delivery links open in the browser</td><td>Settings + Essence page</td></tr>
+          <tr><td>K-05</td><td>Google Sign-In is optional; guest play works</td><td>Launch without Google</td></tr>
+          <tr><td>K-06</td><td>Store listing text matches §2 features only</td><td>Listing review</td></tr>
+          <tr><td>K-07</td><td>Signed AAB uploads to Play Console</td><td>Console upload</td></tr>
+          <tr><td>K-08</td><td>Share after a run opens the system share sheet</td><td>Game over → Share</td></tr>
+        </tbody>
+      </table>
+
+      <h2>5. Out of scope (not in codebase)</h2>
+      <ul class="out">
+        <li>Battle pass, daily quests, energy, or friends list</li>
+        <li>Subscriptions or a paid Pro tier</li>
+        <li>Advertisements or ad-rewarded Essence</li>
+        <li>iOS or web client</li>
+        <li>Built-in social networks (system share intent only)</li>
+        <li>Server-side combat or anti-cheat beyond receipt dedup</li>
+        <li>Firebase Analytics / Crashlytics in the game client</li>
+      </ul>
+
+      <h2>6. Reference URLs</h2>
+      <table>
+        <tbody>
+          <tr><th>Source repository</th><td><a href="https://github.com/iamusta/aether">github.com/iamusta/aether</a></td></tr>
+          <tr><th>Privacy policy</th><td><a href="https://iamusta.github.io/aether-privacy-policy.html">iamusta.github.io/aether-privacy-policy.html</a></td></tr>
+          <tr><th>Delivery agreement</th><td><a href="https://iamusta.github.io/aether-delivery-contract.html">iamusta.github.io/aether-delivery-contract.html</a></td></tr>
+          <tr><th>Play Store package</th><td><a href="https://play.google.com/store/apps/details?id=com.gamegoal.aether">play.google.com/store/apps/details?id=com.gamegoal.aether</a></td></tr>
+          <tr><th>Contact</th><td><a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></td></tr>
+          <tr><th>Document version</th><td>1.0 — 6 September 2026</td></tr>
+        </tbody>
+      </table>
+
+      <h2>7. Approval</h2>
+      <p>By signing below, the parties confirm they have read this agreement and accept the scope and criteria in §2–§5.</p>
+      <div class="sign">
+        <div class="sign-box">Provider — Name / Date / Signature</div>
+        <div class="sign-box">Client — Name / Date / Signature</div>
+      </div>
+
+      <footer>
+        <p>
+          © 2026 AETHER · This document is for product alignment and release planning.
+          Product features are based solely on the referenced repository source code.
+          For legally binding terms, a separate agreement under applicable local law is required.
+        </p>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>

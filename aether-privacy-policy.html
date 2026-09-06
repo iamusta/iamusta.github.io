@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — AETHER</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:       #0f172a;
+    --ink-mid:   #334155;
+    --ink-soft:  #64748b;
+    --paper:     #f8fafc;
+    --paper-mid: #ffffff;
+    --accent:    #0f766e;
+    --accent-soft: #ccfbf1;
+    --accent-2:  #b45309;
+    --rule:      #e2e8f0;
+    --hero-bg:   linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 45%, #f8fafc 100%);
+    --serif: 'Libre Baskerville', Georgia, serif;
+    --sans:  'IBM Plex Sans', system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.94);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--accent-soft);
+    padding: 14px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    animation: slideDown .6s ease both;
+  }
+
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none; color: var(--ink);
+  }
+  .logo-mark {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 15px; line-height: 1;
+    box-shadow: 0 4px 14px rgba(15, 118, 110, 0.25);
+  }
+  .logo-text {
+    font-family: var(--sans);
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+  }
+  .doc-badge {
+    font-family: var(--sans);
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid #99f6e4;
+    padding: 5px 14px;
+    border-radius: 6px;
+  }
+
+  .hero {
+    padding: 64px 40px 48px;
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--hero-bg);
+    border-bottom: 1px solid var(--rule);
+    animation: fadeUp .8s .1s ease both;
+  }
+  .hero-eyebrow {
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    line-height: 1.15;
+    letter-spacing: -.01em;
+    color: var(--ink);
+    margin-bottom: 18px;
+    max-width: 18ch;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .hero-meta {
+    display: flex; gap: 20px; flex-wrap: wrap;
+    font-size: .84rem;
+    color: var(--ink-soft);
+    padding-top: 18px;
+    margin-top: 8px;
+  }
+  .hero-meta span {
+    display: flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 6px 14px;
+  }
+  .hero-meta strong { color: var(--ink-mid); }
+
+  .page-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 48px 40px 100px;
+  }
+
+  .quick-nav {
+    background: var(--paper-mid);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 48px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+    animation: fadeUp .8s .2s ease both;
+  }
+  .quick-nav-title {
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+  }
+  .quick-nav ol {
+    list-style: none;
+    columns: 2;
+    gap: 8px;
+  }
+  .quick-nav li { margin-bottom: 6px; }
+  .quick-nav a {
+    font-size: .9rem;
+    color: var(--ink-mid);
+    text-decoration: none;
+    display: flex; align-items: center; gap: 6px;
+    transition: color .2s;
+  }
+  .quick-nav a::before {
+    content: '§';
+    font-size: .75rem;
+    font-weight: 700;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .quick-nav a:hover { color: var(--accent); }
+
+  .section {
+    margin-bottom: 56px;
+    animation: fadeUp .7s ease both;
+  }
+  .section-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid #99f6e4;
+    margin-bottom: 12px;
+  }
+  .section h2 {
+    font-family: var(--sans);
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -.01em;
+    margin-bottom: 18px;
+    color: var(--ink);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-soft);
+  }
+  .section p {
+    color: var(--ink-mid);
+    margin-bottom: 16px;
+    font-size: .95rem;
+  }
+  .section ul, .section ol {
+    margin: 12px 0 16px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .section ul li, .section ol li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: var(--ink-mid);
+    font-size: .95rem;
+  }
+  .section ul li::before {
+    content: '';
+    position: absolute; left: 2px; top: 10px;
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+  .section ol { counter-reset: ol-counter; }
+  .section ol li { counter-increment: ol-counter; }
+  .section ol li::before {
+    content: counter(ol-counter) '.';
+    position: absolute; left: 0;
+    color: var(--accent); font-weight: 700;
+    font-size: .85rem; top: 1px;
+  }
+
+  .section code {
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.88em;
+    word-break: break-word;
+  }
+  .section a { color: var(--accent); }
+
+  .callout {
+    border: 1px solid #99f6e4;
+    border-left: 4px solid var(--accent);
+    background: #f0fdfa;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 20px 0;
+  }
+  .callout p { margin: 0; font-size: .9rem; color: var(--ink-mid); }
+  .callout strong { color: var(--ink); }
+
+  .callout-warn {
+    border-color: #fcd34d;
+    border-left-color: var(--accent-2);
+    background: #fffbeb;
+  }
+
+  .contact-card {
+    background: linear-gradient(135deg, #134e4a 0%, #0f766e 100%);
+    color: #f0fdfa;
+    border-radius: 14px;
+    padding: 32px 36px;
+    margin-top: 48px;
+    box-shadow: 0 12px 40px rgba(15, 118, 110, 0.2);
+  }
+  .contact-card h3 {
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+    letter-spacing: -.01em;
+  }
+  .contact-card p { color: rgba(240,253,250,.75); font-size: .9rem; margin-bottom: 20px; }
+  .contact-card a {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #fff;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: 600; font-size: .9rem;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .contact-card a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    background: #fff;
+    padding: 24px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px;
+    font-size: .8rem;
+    color: var(--ink-soft);
+  }
+  footer a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  footer a:hover { text-decoration: underline; }
+
+  @keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to   { transform: translateY(0);     opacity: 1; }
+  }
+  @keyframes fadeUp {
+    from { transform: translateY(24px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+  }
+
+  .section:nth-child(1)  { animation-delay: .0s; }
+  .section:nth-child(2)  { animation-delay: .05s; }
+  .section:nth-child(3)  { animation-delay: .1s; }
+  .section:nth-child(4)  { animation-delay: .15s; }
+  .section:nth-child(5)  { animation-delay: .2s; }
+  .section:nth-child(6)  { animation-delay: .25s; }
+  .section:nth-child(7)  { animation-delay: .3s; }
+  .section:nth-child(8)  { animation-delay: .35s; }
+  .section:nth-child(9)  { animation-delay: .4s; }
+  .section:nth-child(10) { animation-delay: .45s; }
+  .section:nth-child(11) { animation-delay: .5s; }
+
+  @media (max-width: 600px) {
+    header { padding: 14px 20px; }
+    .hero  { padding: 48px 20px 36px; }
+    .page-wrap { padding: 0 20px 80px; }
+    .quick-nav ol { columns: 1; }
+    footer { padding: 20px; flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">
+    <div class="logo-mark" aria-hidden="true">🔒</div>
+    <span class="logo-text">AETHER</span>
+  </a>
+  <span class="doc-badge">Privacy Policy</span>
+</header>
+
+<div class="hero">
+  <p class="hero-eyebrow">Legal Document</p>
+  <h1>Your privacy, <em>protected.</em></h1>
+  <div class="hero-meta">
+    <span>📅 <strong>Effective date:</strong> September 6, 2026</span>
+    <span>✏️ <strong>Last updated:</strong> September 6, 2026</span>
+    <span>📱 <strong>App:</strong> AETHER</span>
+  </div>
+</div>
+
+<div class="page-wrap">
+
+  <nav class="quick-nav" aria-label="Page contents">
+    <p class="quick-nav-title">Contents</p>
+    <ol>
+      <li><a href="#s1">Information We Collect</a></li>
+      <li><a href="#s2">How We Use Information</a></li>
+      <li><a href="#s3">Gameplay, Cloud &amp; Sharing</a></li>
+      <li><a href="#s4">Third-Party Services</a></li>
+      <li><a href="#s5">Analytics &amp; Crash Reporting</a></li>
+      <li><a href="#s6">Advertising &amp; Purchases</a></li>
+      <li><a href="#s7">Data Storage &amp; Security</a></li>
+      <li><a href="#s8">Children's Privacy</a></li>
+      <li><a href="#s9">Your Rights</a></li>
+      <li><a href="#s10">Changes to This Policy</a></li>
+      <li><a href="#s11">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <div class="callout" style="margin-bottom:48px">
+    <p><strong>The short version:</strong> AETHER saves your run, shop, and Essence on your device and on a cloud account created when the app starts. Gameplay itself is on your phone. We do not sell your data or show ads. Optional Google Sign-In only updates the name, email, and photo on the same account.</p>
+  </div>
+
+  <section class="section" id="s1">
+    <p class="section-number">01</p>
+    <h2>Information We Collect</h2>
+    <p>AETHER is designed with a small data footprint. Here is exactly what we collect and why:</p>
+    <p><strong>Information you provide directly:</strong></p>
+    <ul>
+      <li>No email, password, or registration form is required to play.</li>
+      <li>If you choose <strong>Google Sign-In</strong> in Settings, Google may share your display name, email address, and profile photo URL. We store those on your existing AETHER account so the same row can be recognised on another phone.</li>
+      <li>If you write to us at the contact address below, that message is handled by your email provider, not stored inside the app.</li>
+    </ul>
+    <p><strong>Information collected automatically (stored locally on your device):</strong></p>
+    <ul>
+      <li><strong>Save file (<code>user://aether.save</code>):</strong> Essence balance, shop upgrades, unlocked weapons, owned ships, selected ship, achievements, run stats (runs, best wave, best score, best combo, kills, play time, daily rift), settings, tutorial flag, and used in-app purchase tokens.</li>
+      <li><strong>Settings:</strong> sound volume, music volume, home-music mute, haptic feedback, dash-button side, and language.</li>
+      <li><strong>Auth tokens (local):</strong> Firebase user id, id token, refresh token, and provider name, so the app can write your cloud row after a restart.</li>
+    </ul>
+    <p><strong>Information stored in the cloud (Firebase Auth + Firestore):</strong></p>
+    <ul>
+      <li>On first launch the app creates an <strong>anonymous Firebase Auth</strong> user. That uid is the key of your document in the <code>leaderboard</code> collection.</li>
+      <li>The document may contain: display name, email, photo URL, best score, wave, combo, Essence, run count, kills, play time, daily rift score and date, selected ship, owned ships, achievements, shop, unlocked weapons, used purchase tokens, tutorial flag, settings JSON, and a last-updated timestamp.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="s2">
+    <p class="section-number">02</p>
+    <h2>How We Use Information</h2>
+    <p>We use the information described above solely to run AETHER:</p>
+    <ul>
+      <li>To keep your Essence, shop, ships, and records when you close the app or change phones (after Google Sign-In).</li>
+      <li>To show a public ranking row for your account.</li>
+      <li>To remember language, audio, haptics, and control side.</li>
+      <li>To grant Essence packs bought on Google Play once, using the purchase token as a receipt so the same buy is not granted twice.</li>
+      <li>To restore the same wallet after you sign in on another device.</li>
+    </ul>
+    <p>We do not sell, rent, or trade any data to third parties. We do not build advertising profiles. AETHER does not display ads.</p>
+  </section>
+
+  <section class="section" id="s3">
+    <p class="section-number">03</p>
+    <h2>Gameplay, Cloud &amp; Sharing</h2>
+    <p>Combat, waves, and image processing for the share card run on your device. Cloud writes are limited to the account fields listed in Section 01.</p>
+    <div class="callout">
+      <p><strong>We do not upload your gameplay video or microphone.</strong> AETHER does not record the screen except when you tap Share after a run, which writes a PNG share card in app storage and hands it to the Android share sheet.</p>
+    </div>
+    <p><strong>Permissions declared for the Android export:</strong></p>
+    <ul>
+      <li><strong>INTERNET:</strong> Firebase Auth, Firestore, and Google Play Billing. Required for cloud save, optional Google Sign-In, and Essence purchases.</li>
+      <li><strong>VIBRATE:</strong> Optional haptic feedback on dash, damage, and level-up. You can turn this off in Settings.</li>
+    </ul>
+    <p>AETHER does <strong>not</strong> declare photo, microphone, location, or contacts permissions.</p>
+    <p><strong>Share card:</strong> After a run you may share a generated PNG through the system share sheet. AETHER uses Android <code>FileProvider</code> to grant temporary read access to that file. The image is not uploaded by AETHER to our servers.</p>
+  </section>
+
+  <section class="section" id="s4">
+    <p class="section-number">04</p>
+    <h2>Third-Party Services</h2>
+    <p>AETHER integrates the following third-party services:</p>
+    <p><strong>Google Firebase Authentication:</strong> Creates an anonymous user on launch and, if you choose, links a Google account. Google’s Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+    <p><strong>Google Cloud Firestore:</strong> Stores the <code>leaderboard</code> document described in Section 01. Used for ranking and cross-device wallet sync. Not used to store photos or chat.</p>
+    <p><strong>Google Play Billing:</strong> Processes Essence pack purchases. Google receives the payment. AETHER only receives product id, price text, and a purchase token so Essence can be granted once.</p>
+    <p><strong>Google Play:</strong> Distribution, updates, and store ratings follow Google’s policies.</p>
+    <p>AETHER does <strong>not</strong> integrate advertising SDKs such as Google AdMob.</p>
+  </section>
+
+  <section class="section" id="s5">
+    <p class="section-number">05</p>
+    <h2>Analytics &amp; Crash Reporting</h2>
+    <p>The Godot client does <strong>not</strong> include Firebase Analytics or Firebase Crashlytics. There is no screen-view or event analytics SDK in the game binary.</p>
+    <p>Google may still collect standard Play Store and Play Billing diagnostics under Google’s own policies when you download the app or complete a purchase.</p>
+    <div class="callout callout-warn">
+      <p><strong>Important:</strong> Cloud documents do <strong>not</strong> include the visual content of your runs, share-card pixels, or payment card numbers. Purchase tokens are stored only to prevent a second grant of the same buy.</p>
+    </div>
+  </section>
+
+  <section class="section" id="s6">
+    <p class="section-number">06</p>
+    <h2>Advertising &amp; In-App Purchases</h2>
+    <p>AETHER does <strong>not</strong> display advertisements.</p>
+    <p>AETHER sells <strong>consumable Essence packs</strong> through Google Play Billing. Packs are one-time grants of in-game Essence. There are no subscriptions, no battle pass, and no paid “Pro” tier.</p>
+    <p>Current product ids (SKU) and Essence amounts:</p>
+    <ul>
+      <li><code>aether_essence_50</code> — 50</li>
+      <li><code>aether_essence_100</code> — 100</li>
+      <li><code>aether_essence_150</code> — 150</li>
+      <li><code>aether_essence_200</code> — 200</li>
+      <li><code>aether_essence_300</code> — 300</li>
+      <li><code>aether_essence_500</code> — 500</li>
+      <li><code>aether_essence_1000</code> — 1,000 (popular)</li>
+      <li><code>aether_essence_2800</code> — 2,800</li>
+      <li><code>aether_essence_7500</code> — 7,500 (best value)</li>
+    </ul>
+    <p>Prices are set in Google Play Console and shown in the app as Google returns them. Refunds follow Google Play’s refund policy. Essence granted for a completed purchase is written to your local save and your cloud document.</p>
+    <p>This Privacy Policy and the Delivery Agreement are linked from Settings and from the Essence purchase page.</p>
+  </section>
+
+  <section class="section" id="s7">
+    <p class="section-number">07</p>
+    <h2>Data Storage &amp; Security</h2>
+    <p><strong>Where data is stored:</strong> On your Android device in the app sandbox, and in Firebase Auth / Firestore under your uid. We do not operate a separate AETHER game server that stores photos or payment cards.</p>
+    <p><strong>How long data is retained:</strong></p>
+    <ul>
+      <li>The local save remains until you clear app data or uninstall (subject to Android backup behaviour).</li>
+      <li>The Firestore document remains while the account exists. Switching the Google account in Settings replaces the local wallet with that account’s cloud row.</li>
+      <li>Signing out returns the app to a new anonymous account and resets shop, Essence, and tutorial on that device.</li>
+    </ul>
+    <p><strong>Security measures:</strong> Local files sit in Android’s application sandbox. Cloud writes use a Firebase ID token. Do not share your device backup if you want the save to stay private.</p>
+    <p><strong>Backup:</strong> Android may back up app files when device backup is enabled. That can include the local save.</p>
+  </section>
+
+  <section class="section" id="s8">
+    <p class="section-number">08</p>
+    <h2>Children's Privacy</h2>
+    <p>AETHER is not directed at children under the age of 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personal information from children.</p>
+    <p>If you are a parent or guardian and believe your child has used AETHER in a way that raises privacy concerns, please contact us at the address below and we will take appropriate steps.</p>
+  </section>
+
+  <section class="section" id="s9">
+    <p class="section-number">09</p>
+    <h2>Your Rights</h2>
+    <p>Depending on your location, you may have the following rights regarding your data:</p>
+    <ul>
+      <li><strong>Access:</strong> Settings, Collection, Shop, and the ranking row already show what the app stores about you.</li>
+      <li><strong>Deletion:</strong> You may clear app data or uninstall to remove the local save. To request deletion of the cloud document, email us from the address tied to your Google Sign-In (if any) and include the in-game display name.</li>
+      <li><strong>Account control:</strong> Google Sign-In is optional. You may stay on the anonymous account created at launch.</li>
+      <li><strong>GDPR (EU/EEA users):</strong> You may have additional rights under the GDPR, including data portability and the right to lodge a complaint with a supervisory authority. For data processed by Google (Auth, Firestore, Play Billing), use Google’s account controls and GDPR resources.</li>
+      <li><strong>CCPA (California users):</strong> AETHER does not sell your personal information.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="s10">
+    <p class="section-number">10</p>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in the app’s features, applicable law, or our practices. When we make material changes, we will update the “Last updated” date at the top of this document.</p>
+    <p>Continued use of AETHER after an updated policy is posted constitutes your acceptance of the revised policy.</p>
+    <p>The current version is accessible via <strong>Settings → Legal</strong> and the Essence purchase page inside the app, and at the URL where this document is hosted.</p>
+  </section>
+
+  <section class="section" id="s11">
+    <p class="section-number">11</p>
+    <h2>Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or AETHER’s data practices, please contact us:</p>
+  </section>
+
+  <div class="contact-card">
+    <h3>Get in touch</h3>
+    <p>Questions about your privacy? We aim to respond within 48 hours.</p>
+    <a href="mailto:lagomlabs@gmail.com">✉️ lagomlabs@gmail.com</a>
+  </div>
+
+</div>
+
+<footer>
+  <span>© 2026 AETHER. All rights reserved.</span>
+  <span>
+    <a href="aether-delivery-contract.html">Delivery Agreement</a>
+  </span>
+</footer>
+
+</body>
+</html>
