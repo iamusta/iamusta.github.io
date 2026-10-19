@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PULSARIS v3.0 — Product delivery agreement and in-app purchase delivery terms.">
+  <title>PULSARIS v3.0 — Delivery Agreement</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --paper: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --brand: #6d28d9;
+      --brand-soft: #f5f3ff;
+      --ok: #059669;
+      --warn: #b45309;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 80px; }
+    .paper {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 40px 44px;
+      box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+    }
+    h1 { font-size: 1.85rem; line-height: 1.2; margin: 0 0 8px; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--brand-soft);
+      color: var(--brand);
+    }
+    h3 { font-size: 1rem; margin: 22px 0 8px; }
+    p, li { font-size: 0.96rem; }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+      padding: 16px;
+      background: var(--brand-soft);
+      border-radius: 12px;
+      border: 1px solid #ede9fe;
+    }
+    .meta > div {
+      font-size: 0.9rem;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .meta .wide { grid-column: 1 / -1; }
+    .meta strong {
+      display: block;
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.84em;
+      word-break: break-all;
+      overflow-wrap: anywhere;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: #ecfdf5;
+      color: var(--ok);
+      border: 1px solid #a7f3d0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 0.9rem;
+      table-layout: fixed;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    th { background: #f1f5f9; font-weight: 600; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 6px 0; }
+    .out { color: var(--warn); }
+    .sign {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 28px;
+    }
+    .sign-box {
+      border-top: 1px solid var(--ink);
+      padding-top: 8px;
+      min-height: 64px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 28px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+    a { color: var(--brand); word-break: break-all; }
+    @media (max-width: 640px) {
+      .paper { padding: 28px 20px; }
+      .sign { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: white; }
+      .paper { box-shadow: none; border: none; padding: 0; }
+      .wrap { padding: 0; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article class="paper">
+      <span class="badge">Source-verified · PULSARIS v3.0</span>
+      <h1>PULSARIS v3.0<br>Product Delivery Agreement</h1>
+      <p>
+        This document defines the scope, deliverables and acceptance criteria of the
+        <strong>PULSARIS</strong> Android application version <strong>3.0</strong>, and the terms under which
+        in-app purchases are delivered to players. All product statements are derived from the application's
+        source code; no feature that is not present in the code is included.
+      </p>
+
+      <div class="meta">
+        <div><strong>Product name</strong> PULSARIS</div>
+        <div><strong>Version</strong> 3.0</div>
+        <div><strong>Platform</strong> Android · Godot 4.7 · arm64-v8a, armeabi-v7a</div>
+        <div><strong>Repository</strong> iamusta/neon-kacis (private)</div>
+        <div><strong>Document date</strong> October 19, 2026</div>
+        <div class="wide"><strong>Package name</strong> <code>com.gamegoal.pulsaris</code></div>
+      </div>
+
+      <h2>1. Purpose</h2>
+      <p>
+        This agreement records what PULSARIS v3.0 delivers at release and how purchased digital items are
+        delivered. It is a product scope, acceptance and delivery document — not legal advice.
+      </p>
+
+      <h2>2. Product definition (verified)</h2>
+      <p>
+        PULSARIS is a <strong>one-finger endless vertical space shooter</strong>. All gameplay runs on the device;
+        there are no accounts and no cloud save. Optional rewarded ads are served by Google AdMob, gameplay events
+        are sent to Firebase Analytics, and optional items are sold through Google Play Billing.
+      </p>
+
+      <h3>2.1 Screens</h3>
+      <table>
+        <thead><tr><th>Screen</th><th>Role</th></tr></thead>
+        <tbody>
+          <tr><td>Main menu</td><td>Play, Hangar, Daily, Store, Settings, credit balance</td></tr>
+          <tr><td>Game</td><td>Endless sectors, bosses, power-ups, pause</td></tr>
+          <tr><td>Game over</td><td>Results, continue (rewarded ad, or free with No Ads), play again</td></tr>
+          <tr><td>Hangar</td><td>Ships, paints, permanent upgrades, boosters (bought with credits)</td></tr>
+          <tr><td>Daily</td><td>7-day login reward and 3 daily missions</td></tr>
+          <tr><td>Store</td><td>Google Play purchases, restore purchases, legal links</td></tr>
+          <tr><td>Settings</td><td>Audio, vibration, control sensitivity, language, legal links</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.2 Gameplay (verified)</h3>
+      <ul>
+        <li>Drag to steer; firing is automatic</li>
+        <li>6 themed sectors repeat endlessly with rising difficulty; each ends with a three-phase boss</li>
+        <li>6 enemy types; power-ups: weapon level, shield, rapid fire, magnet, nova bomb, repair</li>
+        <li>9 ships in 4 rarity tiers, 7 paints, 10 permanent upgrades, 4 single-use boosters — all bought with in-game credits</li>
+      </ul>
+
+      <h3>2.3 In-app products (Google Play)</h3>
+      <table>
+        <thead><tr><th>Product ID</th><th>Type</th><th>Contents</th></tr></thead>
+        <tbody>
+          <tr><td><code>no_ads</code></td><td>Permanent</td><td>Continue without ads, forever + 5,000 credits</td></tr>
+          <tr><td><code>starter_pack</code></td><td>Permanent, once</td><td>VIPER ship + 3,000 credits + 3 boosters</td></tr>
+          <tr><td><code>credits_2500</code></td><td>Consumable</td><td>2,500 credits</td></tr>
+          <tr><td><code>credits_8000</code></td><td>Consumable</td><td>8,000 credits</td></tr>
+          <tr><td><code>credits_25000</code></td><td>Consumable</td><td>25,000 credits</td></tr>
+        </tbody>
+      </table>
+      <p>Prices are set and shown by Google Play in the player's local currency. There are no subscriptions.</p>
+
+      <h3>2.4 Languages (20)</h3>
+      <p>English, Türkçe, Español, Português (BR), Français, Deutsch, Italiano, Русский, Українська, Polski,
+        Nederlands, 日本語, 한국어, 简体中文, 繁體中文, Bahasa Indonesia, Tiếng Việt, ไทย, हिन्दी, العربية.</p>
+
+      <h3>2.5 Permissions, ads &amp; analytics</h3>
+      <ul>
+        <li>Permissions: <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>VIBRATE</code>, plus advertising-ID and technical permissions added by Google libraries</li>
+        <li>Ads: rewarded only, shown only when the player chooses to watch one</li>
+        <li>Analytics: Firebase Analytics gameplay events (see the Privacy Policy)</li>
+        <li>Account &amp; cloud: none — progress is saved locally on the device</li>
+      </ul>
+
+      <h2>3. Delivery of purchased items</h2>
+      <ul>
+        <li><strong>Seller of record:</strong> purchases are made through Google Play; Google processes the payment under the Google Play Terms of Service.</li>
+        <li><strong>Delivery:</strong> items are digital and are delivered to the player's game immediately after Google Play confirms the payment. Permanent items are acknowledged and consumable credit packs are consumed with Google Play at delivery.</li>
+        <li><strong>Permanent items</strong> (<code>no_ads</code>, <code>starter_pack</code>) can be restored on the same Google account with <em>Store → Restore purchases</em>.</li>
+        <li><strong>Credits</strong> are an in-game virtual currency with no cash value. They cannot be exchanged for money, transferred or traded, and are stored on the device: clearing app data or uninstalling removes them.</li>
+        <li><strong>Right of withdrawal:</strong> because digital content is delivered immediately at the player's request, the right of withdrawal ends once delivery begins, to the extent permitted by applicable law (including EU consumer law and Turkish Regulation on Distance Contracts, Art. 15(ğ)).</li>
+        <li><strong>Refunds</strong> are handled by Google Play under its refund policy. If an item was paid for but not delivered, contact us with the Google Play order number (GPA.…) and we will deliver it or help you obtain a refund.</li>
+      </ul>
+
+      <h2>4. Release deliverables</h2>
+      <ul>
+        <li>Signed Android App Bundle (AAB) for package <code>com.gamegoal.pulsaris</code>, version 3.0</li>
+        <li>Store listing in English and Turkish; in-game text in 20 languages</li>
+        <li>Privacy Policy and this Delivery Agreement published and linked from Settings → Legal and the Store screen</li>
+        <li>Google Play products created with the IDs in section 2.3</li>
+        <li>Contact: <a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></li>
+      </ul>
+
+      <h2>5. Acceptance criteria</h2>
+      <table>
+        <thead><tr><th>ID</th><th>Criterion</th><th>Verification</th></tr></thead>
+        <tbody>
+          <tr><td>P-01</td><td>Game starts, plays endlessly and saves progress locally</td><td>Device test</td></tr>
+          <tr><td>P-02</td><td>Rewarded ad revives only after the reward is granted</td><td>Device test (test ad unit)</td></tr>
+          <tr><td>P-03</td><td>No Ads owners revive without an ad</td><td>Device test</td></tr>
+          <tr><td>P-04</td><td>Each product in 2.3 is delivered once per payment; permanent items restore</td><td>Google Play internal test track</td></tr>
+          <tr><td>P-05</td><td>Release builds never grant store items without a confirmed payment</td><td>Code review + release build</td></tr>
+          <tr><td>P-06</td><td>All 20 languages render without missing glyphs or overflow</td><td>Device test</td></tr>
+          <tr><td>P-07</td><td>Legal links open this agreement and the Privacy Policy</td><td>Device test</td></tr>
+        </tbody>
+      </table>
+
+      <h2>6. Out of scope</h2>
+      <ul class="out">
+        <li>Subscriptions or paid tiers other than the products in 2.3</li>
+        <li>Accounts, sign-in, cloud save or cross-device sync</li>
+        <li>Leaderboards, multiplayer or social features</li>
+        <li>Interstitial or banner ads</li>
+        <li>iOS and web versions</li>
+      </ul>
+
+      <h2>7. Reference URLs</h2>
+      <table>
+        <tbody>
+          <tr><td>Privacy Policy</td><td><a href="pulsaris-privacy-policy.html">pulsaris-privacy-policy.html</a></td></tr>
+          <tr><td>Delivery Agreement</td><td><a href="pulsaris-delivery-contract.html">pulsaris-delivery-contract.html</a></td></tr>
+          <tr><td>Play Store package</td><td><code>com.gamegoal.pulsaris</code></td></tr>
+          <tr><td>Contact</td><td><a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></td></tr>
+          <tr><td>Document version</td><td>1.0 — October 19, 2026</td></tr>
+        </tbody>
+      </table>
+
+      <h2>8. Approval</h2>
+      <div class="sign">
+        <div class="sign-box">Provider — Name / Date / Signature</div>
+        <div class="sign-box">Client — Name / Date / Signature</div>
+      </div>
+
+      <p class="foot">© 2026 PULSARIS. This document is for product alignment, release planning and purchase delivery.
+        Statutory consumer rights under applicable local law are not limited by it.</p>
+    </article>
+  </div>
+</body>
+</html>
