@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cargo Empire v1.0.0 — Product delivery agreement and in-app purchase delivery terms.">
+  <title>Cargo Empire — Product Delivery Agreement</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --paper: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --brand: #6d28d9;
+      --brand-soft: #f5f3ff;
+      --ok: #059669;
+      --warn: #b45309;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 80px; }
+    .paper {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 40px 44px;
+      box-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+    }
+    h1 { font-size: 1.85rem; line-height: 1.2; margin: 0 0 8px; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--brand-soft);
+      color: var(--brand);
+    }
+    h3 { font-size: 1rem; margin: 22px 0 8px; }
+    p, li { font-size: 0.96rem; }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+      padding: 16px;
+      background: var(--brand-soft);
+      border-radius: 12px;
+      border: 1px solid #ede9fe;
+    }
+    .meta > div {
+      font-size: 0.9rem;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .meta .wide { grid-column: 1 / -1; }
+    .meta strong {
+      display: block;
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.84em;
+      word-break: break-all;
+      overflow-wrap: anywhere;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: #ecfdf5;
+      color: var(--ok);
+      border: 1px solid #a7f3d0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 0.9rem;
+      table-layout: fixed;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    th { background: #f1f5f9; font-weight: 600; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 6px 0; }
+    .out { color: var(--warn); }
+    .sign {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 28px;
+    }
+    .sign-box {
+      border-top: 1px solid var(--ink);
+      padding-top: 8px;
+      min-height: 64px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 28px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+    a { color: var(--brand); word-break: break-all; }
+    @media (max-width: 640px) {
+      .paper { padding: 28px 20px; }
+      .sign { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: white; }
+      .paper { box-shadow: none; border: none; padding: 0; }
+      .wrap { padding: 0; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article class="paper">
+      <span class="badge">Source-verified · Cargo Empire v1.0.0</span>
+      <h1>Cargo Empire v1.0.0<br>Product Delivery Agreement</h1>
+      <p>
+        This document defines the scope, deliverables and acceptance criteria of the
+        <strong>Cargo Empire</strong> Android application version <strong>1.0.0</strong>, and the terms under which
+        in-app purchases are delivered to players. All product statements are derived from the application's
+        source code; no feature that is not present in the code is included.
+      </p>
+
+      <div class="meta">
+        <div><strong>Product name</strong> Cargo Empire</div>
+        <div><strong>Version</strong> 1.0.0</div>
+        <div><strong>Platform</strong> Android · Godot 4.7 · arm64-v8a</div>
+        <div><strong>Developer</strong> LagomLabs</div>
+        <div><strong>Document date</strong> November 12, 2026</div>
+        <div class="wide"><strong>Package name</strong> <code>com.lagomlabs.free.cargo.empire.tycoon.game</code></div>
+      </div>
+
+      <h2>1. Purpose</h2>
+      <p>
+        This agreement records what Cargo Empire v1.0.0 delivers at release and how purchased digital items are
+        delivered. It is a product scope, acceptance and delivery document — not legal advice.
+      </p>
+
+      <h2>2. Product definition (verified)</h2>
+      <p>
+        Cargo Empire is a <strong>one-handed vertical idle logistics tycoon</strong>: the player founds a cargo
+        company, delivers parcels on a city map and grows a fleet from a moto courier to cargo planes. All gameplay
+        runs on the device; there are no accounts, no cloud save and no analytics. Optional rewarded ads are served
+        by Google AdMob, and optional items are sold through Google Play.
+      </p>
+
+      <h3>2.1 Screens</h3>
+      <table>
+        <thead><tr><th>Screen</th><th>Role</th></tr></thead>
+        <tbody>
+          <tr><td>Company setup</td><td>Company name, founder, age group, color, emblem and headquarters city</td></tr>
+          <tr><td>Fleet</td><td>City map with routes, vehicles and depot; fleet list with buy and manager buttons; map bonuses, rush orders and depot fires</td></tr>
+          <tr><td>Upgrade</td><td>Vehicle and fleet upgrades; manager cards and card chests</td></tr>
+          <tr><td>Missions</td><td>Contracts, daily reward and missions; Expedition Pass; weekly event and league; client stories</td></tr>
+          <tr><td>Store</td><td>Limited-time offer, Google Play products, gem packs, items bought with gems</td></tr>
+          <tr><td>Company</td><td>Identity, statistics, going public (IPO), regions, region badges and fleet paints</td></tr>
+          <tr><td>Settings</td><td>Sound, vibration, graphics, daylight, season, language, notifications, ad privacy, rating, save backup</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.2 Gameplay (verified)</h3>
+      <ul>
+        <li>Tap a route to send a delivery; managers automate routes</li>
+        <li>7 vehicles on road, rail, sea and air routes: Moto Courier, Van, Truck, Semi Fleet, Freight Train, Container Ship, Cargo Plane</li>
+        <li>47 upgrades, 21 manager cards with levels, 3 regions unlocked by going public, investors that raise income permanently</li>
+        <li>Rush orders, depot fires, timed contracts, daily rewards with streaks, a 28-day Expedition Pass, weekly events and a 20-company league</li>
+        <li>Earnings while the game is closed: the first hour free, up to 8 more hours with a rewarded ad or always with Nonstop Fleet</li>
+        <li>Real-time day and night, seasons and weather on the map</li>
+      </ul>
+
+      <h3>2.3 In-app products (Google Play)</h3>
+      <table>
+        <thead><tr><th>Product ID</th><th>Type</th><th>Contents</th></tr></thead>
+        <tbody>
+          <tr><td><code>gems_small</code></td><td>Consumable</td><td>100 gems</td></tr>
+          <tr><td><code>gems_medium</code></td><td>Consumable</td><td>550 gems</td></tr>
+          <tr><td><code>gems_large</code></td><td>Consumable</td><td>1,200 gems</td></tr>
+          <tr><td><code>starter</code></td><td>Permanent, once</td><td>Starter Pack: 300 gems + Gold Fleet paint + 60 minutes of Turbo (offered for 48 hours)</td></tr>
+          <tr><td><code>always_on</code></td><td>Permanent</td><td>Nonstop Fleet: the fleet keeps earning while the game is closed (up to 8 hours)</td></tr>
+          <tr><td><code>pass_premium</code></td><td>Per season</td><td>Expedition Pass Premium: the premium reward track of the current 28-day season</td></tr>
+        </tbody>
+      </table>
+      <p>Prices are set and shown by Google Play in the player's local currency. There are no subscriptions.
+        Real-money purchases are turned off for players who select the under-13 age group.</p>
+
+      <h3>2.4 Languages (72)</h3>
+      <p>Türkçe, English and 70 more: every language supported by Google Play, including Arabic, Persian, Hebrew
+        and Urdu (right-to-left) and Chinese, Japanese and Korean.</p>
+
+      <h3>2.5 Permissions, ads &amp; analytics</h3>
+      <ul>
+        <li>Permissions: <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>VIBRATE</code>, plus advertising-ID and technical permissions added by Google libraries</li>
+        <li>Ads: rewarded only (Google AdMob), shown only when the player chooses to watch one; Google's consent form in the EEA, UK and Switzerland; child-directed, G-rated ads for the under-13 age group</li>
+        <li>Analytics: none</li>
+        <li>Account &amp; cloud: none — progress is saved locally on the device; a backup code can be copied in Settings</li>
+      </ul>
+
+      <h2>3. Delivery of purchased items</h2>
+      <ul>
+        <li><strong>Seller of record:</strong> purchases are made through Google Play; Google processes the payment under the Google Play Terms of Service.</li>
+        <li><strong>Delivery:</strong> items are digital and are delivered to the player's game immediately after Google Play confirms the payment. Permanent items are acknowledged and consumable gem packs are consumed with Google Play at delivery.</li>
+        <li><strong>Permanent items</strong> (<code>starter</code>, <code>always_on</code>) belong to the Google account used for the purchase. The Expedition Pass Premium applies to the season in which it was bought.</li>
+        <li><strong>Gems</strong> are an in-game virtual currency with no cash value. They cannot be exchanged for money, transferred or traded, and are stored on the device: clearing app data or uninstalling removes them unless a save backup is restored.</li>
+        <li><strong>Right of withdrawal:</strong> because digital content is delivered immediately at the player's request, the right of withdrawal ends once delivery begins, to the extent permitted by applicable law (including EU consumer law and Turkish Regulation on Distance Contracts, Art. 15(ğ)).</li>
+        <li><strong>Refunds</strong> are handled by Google Play under its refund policy. If an item was paid for but not delivered, contact us with the Google Play order number (GPA.…) and we will deliver it or help you obtain a refund.</li>
+      </ul>
+
+      <h2>4. Release deliverables</h2>
+      <ul>
+        <li>Signed Android App Bundle (AAB) for package <code>com.lagomlabs.free.cargo.empire.tycoon.game</code>, version 1.0.0</li>
+        <li>In-game text in 72 languages</li>
+        <li>Privacy Policy and this Delivery Agreement published and linked from the Store screen and Settings</li>
+        <li>Google Play products created with the IDs in section 2.3</li>
+        <li>Contact: <a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></li>
+      </ul>
+
+      <h2>5. Acceptance criteria</h2>
+      <table>
+        <thead><tr><th>ID</th><th>Criterion</th><th>Verification</th></tr></thead>
+        <tbody>
+          <tr><td>C-01</td><td>Game starts, plays and saves progress locally; earnings accrue while closed as described in 2.2</td><td>Device test + automated tests</td></tr>
+          <tr><td>C-02</td><td>Rewarded ads grant their reward only after the ad is watched</td><td>Device test (test ad unit)</td></tr>
+          <tr><td>C-03</td><td>Each product in 2.3 is delivered once per payment; permanent items stay unlocked on the same Google account</td><td>Google Play internal test track</td></tr>
+          <tr><td>C-04</td><td>Release builds never grant store items without a confirmed payment</td><td>Code review + release build</td></tr>
+          <tr><td>C-05</td><td>Real-money purchases are hidden for the under-13 age group</td><td>Device test</td></tr>
+          <tr><td>C-06</td><td>All 72 languages render without missing glyphs or overflow</td><td>Automated tests + device test</td></tr>
+          <tr><td>C-07</td><td>Store and Settings links open this agreement and the Privacy Policy</td><td>Device test</td></tr>
+        </tbody>
+      </table>
+
+      <h2>6. Out of scope</h2>
+      <ul class="out">
+        <li>Subscriptions or paid items other than the products in 2.3</li>
+        <li>Accounts, sign-in, cloud save or cross-device sync (other than the manual backup code)</li>
+        <li>Real multiplayer; the weekly league uses simulated companies</li>
+        <li>Interstitial or banner ads</li>
+        <li>iOS and web versions</li>
+      </ul>
+
+      <h2>7. Reference URLs</h2>
+      <table>
+        <tbody>
+          <tr><td>Privacy Policy</td><td><a href="cargo-empire-privacy-policy.html">cargo-empire-privacy-policy.html</a></td></tr>
+          <tr><td>Delivery Agreement</td><td><a href="cargo-empire-delivery-contract.html">cargo-empire-delivery-contract.html</a></td></tr>
+          <tr><td>Play Store package</td><td><code>com.lagomlabs.free.cargo.empire.tycoon.game</code></td></tr>
+          <tr><td>Contact</td><td><a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></td></tr>
+          <tr><td>Document version</td><td>1.0 — November 12, 2026</td></tr>
+        </tbody>
+      </table>
+
+      <h2>8. Approval</h2>
+      <div class="sign">
+        <div class="sign-box">Provider — Name / Date / Signature</div>
+        <div class="sign-box">Client — Name / Date / Signature</div>
+      </div>
+
+      <p class="foot">© 2026 LagomLabs. This document is for product alignment, release planning and purchase delivery.
+        Statutory consumer rights under applicable local law are not limited by it.</p>
+    </article>
+  </div>
+</body>
+</html>
