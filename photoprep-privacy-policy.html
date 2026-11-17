@@ -352,7 +352,7 @@
   <h1>Your privacy, <em>protected.</em></h1>
   <div class="hero-meta">
     <span>📅 <strong>Effective date:</strong> June 7, 2026</span>
-    <span>✏️ <strong>Last updated:</strong> June 7, 2026</span>
+    <span>✏️ <strong>Last updated:</strong> November 17, 2026</span>
     <span>📱 <strong>App:</strong> PhotoPrep</span>
   </div>
 </div>
@@ -399,6 +399,7 @@
     <p><strong>Information that may be sent to third parties (release builds with Firebase only):</strong></p>
     <ul>
       <li>When the release build includes Firebase (<code>google-services.json</code> present at build time), anonymised analytics and crash data may be sent to Google Firebase. See Section 05. Debug builds or builds without Firebase configuration do not send this data.</li>
+      <li>To show ads, the Google Mobile Ads SDK (Google AdMob) collects your device's advertising ID, approximate location derived from your IP address, ad interactions, and diagnostic data, and shares them with Google. See Section 06.</li>
     </ul>
   </section>
 
@@ -414,7 +415,7 @@
       <li>To auto-delete old history entries when you choose a retention period (30 or 90 days).</li>
       <li>To measure app stability and usage patterns through Firebase Analytics and Crashlytics in Firebase-enabled release builds only.</li>
     </ul>
-    <p>We do not sell, rent, or trade any data to third parties. We do not build advertising profiles. PhotoPrep does not display ads.</p>
+    <p>We do not sell, rent, or trade any data to third parties. PhotoPrep is ad-supported: ads are served by Google AdMob as described in Section 06. We do not build advertising profiles ourselves.</p>
   </section>
 
   <section class="section" id="s3">
@@ -430,7 +431,7 @@
       <li><strong>READ_EXTERNAL_STORAGE (maxSdkVersion 32):</strong> Legacy read access for photo selection on older Android versions.</li>
       <li><strong>WRITE_EXTERNAL_STORAGE (maxSdkVersion 28):</strong> Legacy write access for saving outputs on very old Android versions.</li>
     </ul>
-    <p>PhotoPrep’s own manifest does <strong>not</strong> declare <code>INTERNET</code>. Release builds that include Firebase may merge additional permissions from the Firebase SDK for analytics and crash reporting only — not for uploading your photos.</p>
+    <p>PhotoPrep’s own manifest does <strong>not</strong> declare <code>INTERNET</code>. The Google Mobile Ads and Firebase SDKs merge network permissions (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>) and the advertising ID permission (<code>com.google.android.gms.permission.AD_ID</code>) for loading ads, analytics, and crash reporting only — never for uploading your photos.</p>
     <p><strong>What happens to your photos:</strong></p>
     <ul>
       <li>You select up to <strong>100 photos</strong> per batch using Android’s system photo picker.</li>
@@ -449,7 +450,8 @@
     <p><strong>Google Firebase (Analytics &amp; Crashlytics) — conditional:</strong> Included only in release builds where <code>app/google-services.json</code> is present at compile time. Firebase may collect anonymised usage and crash diagnostics. See Section 05. Google’s Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
     <p><strong>Coil (image loading library):</strong> An open-source Android library used to display image thumbnails in the editor and history screens. Operates entirely on-device.</p>
     <p><strong>Google Play:</strong> PhotoPrep is distributed through Google Play. Google’s policies and privacy practices apply to app download, updates, and store interactions — not to your photo processing, which remains on-device.</p>
-    <p>PhotoPrep does <strong>not</strong> integrate advertising SDKs (such as Google AdMob) or in-app billing libraries.</p>
+    <p><strong>Google AdMob (Google Mobile Ads SDK) and User Messaging Platform:</strong> Used to show banner ads on the home screen and occasional full-screen ads after you finish a task, and to ask for consent where required. See Section 06. How Google uses data from apps that show its ads: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a></p>
+    <p>PhotoPrep does <strong>not</strong> integrate in-app billing libraries.</p>
   </section>
 
   <section class="section" id="s5">
@@ -476,9 +478,15 @@
   <section class="section" id="s6">
     <p class="section-number">06</p>
     <h2>Advertising &amp; In-App Purchases</h2>
-    <p>PhotoPrep does <strong>not</strong> display advertisements.</p>
+    <p>PhotoPrep is free and ad-supported. Ads are provided by <strong>Google AdMob</strong>: an adaptive banner on the home screen and an occasional full-screen (interstitial) ad after you complete a task, shown at most once every few tasks.</p>
+    <p><strong>Data used for ads:</strong> To request, show, and measure ads and to prevent fraud, the Google Mobile Ads SDK collects and shares with Google your device's advertising ID, approximate location (derived from your IP address), app and ad interaction data, and diagnostic information. Your photos are never sent to Google or any ad network.</p>
+    <p><strong>Your choices:</strong></p>
+    <ul>
+      <li><strong>EEA, UK, and Switzerland:</strong> On first launch PhotoPrep shows Google's consent form (User Messaging Platform). You can change your choice at any time in <strong>Menu → Settings → Privacy → Ad privacy choices</strong>. If you do not consent to personalised ads, Google may still show non-personalised ads.</li>
+      <li><strong>All users:</strong> You can reset or delete your advertising ID, or opt out of ads personalisation, in your device's <strong>Settings → Privacy → Ads</strong> (or Google settings, depending on your device).</li>
+    </ul>
     <p>PhotoPrep does <strong>not</strong> offer in-app purchases, subscriptions, or paid tiers. All editor tools are available without payment. Batch processing supports up to <strong>100 photos</strong> per operation for all users.</p>
-    <p>There is nothing to buy inside the app and no ad personalisation to opt out of.</p>
+    <p>There is nothing to buy inside the app.</p>
   </section>
 
   <section class="section" id="s7">
@@ -512,7 +520,7 @@
       <li><strong>Deletion:</strong> You may delete history entries in the History tab, clear all history in Settings, or uninstall the app to remove locally stored PhotoPrep data.</li>
       <li><strong>Control processing defaults:</strong> You may enable default EXIF stripping and metadata removal tools before sharing photos.</li>
       <li><strong>GDPR (EU/EEA users):</strong> If you are in the European Union or EEA, you may have additional rights under the GDPR, including data portability and the right to lodge a complaint with a supervisory authority. For Firebase-related data processed by Google, refer to Google’s GDPR resources and your Google account controls.</li>
-      <li><strong>CCPA (California users):</strong> PhotoPrep does not sell your personal information.</li>
+      <li><strong>CCPA (California users):</strong> PhotoPrep does not sell your personal information for money. Google AdMob may use data for ads as described in Section 06; you can limit this by opting out of ads personalisation in your device settings.</li>
     </ul>
   </section>
 
