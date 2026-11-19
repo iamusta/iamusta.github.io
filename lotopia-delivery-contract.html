@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lotopia v0.1.0 — product delivery agreement and in-app purchase delivery terms.">
+  <meta name="description" content="Lotopia v1.1.0 — product delivery agreement and in-app purchase delivery terms.">
   <title>Lotopia — Product Delivery Agreement</title>
   <style>
     :root {
@@ -139,27 +139,27 @@
 <body>
   <div class="wrap">
     <article class="paper">
-      <span class="badge">Source-verified · Lotopia v0.1.0</span>
-      <h1>Lotopia v0.1.0<br>Product Delivery Agreement</h1>
+      <span class="badge">Source-verified · Lotopia v1.1.0</span>
+      <h1>Lotopia v1.1.0<br>Product Delivery Agreement</h1>
       <p>
         This document defines the scope, deliverables and acceptance criteria of the
-        <strong>Lotopia: Idle Parking Tycoon</strong> Android application version <strong>0.1.0</strong>, and the terms under which
+        <strong>Lotopia: Idle Parking Tycoon</strong> Android application version <strong>1.1.0</strong>, and the terms under which
         in-app purchases are delivered to players. All product statements are derived from the application's
         source code; no feature that is not present in the code is included.
       </p>
 
       <div class="meta">
         <div><strong>Product name</strong> Lotopia: Idle Parking Tycoon</div>
-        <div><strong>Version</strong> 0.1.0</div>
+        <div><strong>Version</strong> 1.1.0</div>
         <div><strong>Platform</strong> Android · Godot 4.7 · arm64-v8a, armeabi-v7a</div>
         <div><strong>Developer</strong> LagomLabs</div>
-        <div><strong>Document date</strong> November 18, 2026</div>
+        <div><strong>Document date</strong> November 19, 2026</div>
         <div class="wide"><strong>Package name</strong> <code>com.lagomlabs.lotopia.free.car.parking.games.tycoon</code></div>
       </div>
 
       <h2>1. Purpose</h2>
       <p>
-        This agreement records what Lotopia v0.1.0 delivers and how purchased digital items are
+        This agreement records what Lotopia v1.1.0 delivers and how purchased digital items are
         delivered. It is a product scope, acceptance and delivery document — not legal advice.
       </p>
 
@@ -167,7 +167,7 @@
       <p>
         Lotopia is a <strong>one-handed vertical idle parking tycoon</strong>: the player runs a car park, parks
         customers' cars, collects fees at the booth and grows from one street lot to a city-wide parking empire.
-        All gameplay runs on the device; there are no accounts and no cloud save. Optional rewarded ads and
+        All gameplay runs on the device; there are no accounts of its own. With Google Play Games the player's progress is backed up as a saved game, and leaderboards and achievements are shown in Google Play Games. Optional rewarded ads and
         occasional interstitial ads are served by Google AdMob, optional items are sold through Google Play, and
         anonymous usage statistics and crash reports go to Google Firebase.
       </p>
@@ -206,6 +206,7 @@
           <tr><td>no_ads</td><td>Permanent</td><td>No Ads: no interstitial ads; rewarded bonuses granted without watching a video</td></tr>
           <tr><td>starter_pack</td><td>Permanent, once</td><td>Starter Pack: 150 gems, an Epic manager chest, 4 hours of ×2 income</td></tr>
           <tr><td>income_x2</td><td>Permanent</td><td>Permanent ×2 income: permanent ×2 income at every car park</td></tr>
+          <tr><td>watchman</td><td>Permanent</td><td>watchman: </td></tr>
           <tr><td>gems_1</td><td>Consumable</td><td>Pocket of gems: 60 gems</td></tr>
           <tr><td>gems_2</td><td>Consumable</td><td>Bag of gems: 330 gems</td></tr>
           <tr><td>gems_3</td><td>Consumable</td><td>Box of gems: 700 gems</td></tr>
@@ -227,7 +228,7 @@
         <li>Permissions: INTERNET, ACCESS_NETWORK_STATE, VIBRATE, POST_NOTIFICATIONS, RECEIVE_BOOT_COMPLETED, com.android.vending.BILLING, plus the advertising-ID and technical permissions added by Google libraries</li>
         <li>Ads: Google AdMob — rewarded ads only when the player chooses to watch one; interstitial ads when switching car parks (not in the first 5 minutes, at most every 3 minutes, removed by No Ads); Google's consent form in the EEA, UK and Switzerland; content rated PG</li>
         <li>Analytics: Google Firebase Analytics (can be turned off in Settings), Crashlytics crash reports, Remote Config</li>
-        <li>Account &amp; cloud: none — progress is saved locally on the device</li>
+        <li>Account &amp; cloud: no own accounts; optional Google Play Games sign-in for the cloud saved game, 3 leaderboards and 37 achievements</li>
       </ul>
 
       <h2>3. Delivery of purchased items</h2>
@@ -236,7 +237,7 @@
         <li><strong>Delivery:</strong> items are digital and are delivered to the player's game immediately after Google Play confirms the payment. Permanent items are acknowledged and consumable items are consumed with Google Play at delivery.</li>
         <li><strong>Permanent items</strong> (no_ads, starter_pack, income_x2) belong to the Google account used for the purchase and are restored automatically when the game is reinstalled on the same Google account; the gems, chest and ×2 time in the Starter Pack are not granted again.</li>
         <li><strong>Pending payments</strong> (for example cash payments) are delivered when Google Play confirms them, including the next time the game is opened.</li>
-        <li><strong>Gems</strong> are an in-game virtual currency with no cash value. They cannot be exchanged for money, transferred or traded, and are stored on the device: clearing app data or uninstalling removes them.</li>
+        <li><strong>Gems</strong> are an in-game virtual currency with no cash value. They cannot be exchanged for money, transferred or traded, and are stored on the device: clearing app data or uninstalling removes them, unless the progress is restored from the player's Google Play Games saved game.</li>
         <li><strong>Chests</strong> contain manager cards that only improve the game; their possible contents and odds are shown in the game, they hold no real-money value and cannot be cashed out.</li>
         <li><strong>Right of withdrawal:</strong> because digital content is delivered immediately at the player's request, the right of withdrawal ends once delivery begins, to the extent permitted by applicable law (including EU consumer law and the Turkish Regulation on Distance Contracts, Art. 15(ğ)).</li>
         <li><strong>Refunds</strong> are handled by Google Play under its refund policy. If an item was paid for but not delivered, contact us with the Google Play order number (GPA.…) and we will deliver it or help you obtain a refund.</li>
@@ -244,7 +245,7 @@
 
       <h2>4. Release deliverables</h2>
       <ul>
-        <li>Signed Android App Bundle (AAB) for package <code>com.lagomlabs.lotopia.free.car.parking.games.tycoon</code>, version 0.1.0</li>
+        <li>Signed Android App Bundle (AAB) for package <code>com.lagomlabs.lotopia.free.car.parking.games.tycoon</code>, version 1.1.0</li>
         <li>In-game text in 78 languages; store listing, 8 screenshots and a feature graphic for 87 store languages</li>
         <li>Privacy Policy and this Delivery Agreement published and linked from the Shop and Settings screens</li>
         <li>Google Play products created with the IDs in section 2.3</li>
@@ -267,7 +268,7 @@
       <h2>6. Out of scope</h2>
       <ul class="out">
         <li>Subscriptions or paid items other than the products in 2.3</li>
-        <li>Accounts, sign-in, cloud save or cross-device sync</li>
+        <li>Accounts of its own (sign-in, cloud save and cross-device sync only through Google Play Games)</li>
         <li>Multiplayer</li>
         <li>Banner ads</li>
         <li>iOS and web versions</li>
@@ -280,7 +281,7 @@
           <tr><td>Delivery Agreement</td><td><a href="lotopia-delivery-contract.html">lotopia-delivery-contract.html</a></td></tr>
           <tr><td>Play Store package</td><td><code>com.lagomlabs.lotopia.free.car.parking.games.tycoon</code></td></tr>
           <tr><td>Contact</td><td><a href="mailto:lagomlabs@gmail.com">lagomlabs@gmail.com</a></td></tr>
-          <tr><td>Document version</td><td>1.0 — November 18, 2026</td></tr>
+          <tr><td>Document version</td><td>1.0 — November 19, 2026</td></tr>
         </tbody>
       </table>
 
