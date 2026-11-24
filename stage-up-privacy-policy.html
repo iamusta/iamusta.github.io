@@ -404,6 +404,8 @@
       <li>To deliver the items you buy and keep permanent purchases unlocked.</li>
       <li>To understand, in aggregate, how the game is played and where it crashes, so we can improve balance and fix problems.</li>
       <li>To send local reminders on your device (see section 03); these are created by the app on your phone, not sent from a server.</li>
+      <li>To let you share a record: when you tap <strong>Share record</strong>, the game draws a picture of your record on your phone and hands it, with a short message, to the app you pick in Android's share menu. We never receive it.</li>
+      <li>To ask for a rating: now and then, after a good flight, the game may ask Google Play to show its rating window. Your rating and review go to Google Play under Google's terms; we never see who rated.</li>
     </ul>
     <p>We do not sell, rent or trade your information, and we do not use it for anything unrelated to running Stage Up.</p>
   </section>
@@ -416,7 +418,7 @@
       <li><strong>INTERNET</strong> and <strong>ACCESS_NETWORK_STATE</strong> — to load ads and talk to Google Play and Firebase.</li>
       <li><strong>VIBRATE</strong> — haptic feedback (can be turned off in Settings).</li>
       <li><strong>POST_NOTIFICATIONS</strong> — local reminders: your telemetry storage is full, your daily reward is ready, and a friendly reminder at most once or twice a day. Android asks before showing any, and you can turn them off in Settings → Notifications.</li>
-      <li><strong>RECEIVE_BOOT_COMPLETED</strong> and <strong>SCHEDULE_EXACT_ALARM</strong> — to keep those reminders scheduled at the right time after the phone restarts.</li>
+      <li><strong>RECEIVE_BOOT_COMPLETED</strong> — to keep those reminders scheduled after the phone restarts. Stage Up does not ask for exact alarms; Android may deliver a reminder a little later than planned.</li>
       <li><strong>com.android.vending.BILLING</strong> — in-app purchases through Google Play.</li>
       <li><strong>AD_ID</strong> — used by the Google Mobile Ads SDK to read the Advertising ID for ads.</li>
       <li>Other technical permissions added by Google libraries (for example WAKE_LOCK or FOREGROUND_SERVICE) are used only by those libraries.</li>
