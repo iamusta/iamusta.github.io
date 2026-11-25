@@ -390,7 +390,7 @@
       <li><strong>Google Play Billing:</strong> when you buy something, Google processes the payment and returns to the app only the product ID and a purchase token.</li>
       <li><strong>Google Firebase Analytics (usage statistics):</strong> a random app-instance ID created by Firebase, device model, OS version, language, country (from the IP address) and in-game events such as finishing a flight, upgrading a part, buying a rocket model, signing a sponsor, claiming a mission or achievement, watching an ad and completing a purchase (product ID only). These statistics are not used for advertising. Turn them off any time in Settings → Usage statistics.</li>
       <li><strong>Google Firebase Crashlytics (crash reports):</strong> if the game crashes, a report with the stack trace, device model, OS version, app version and the app-instance ID is sent so we can fix the problem.</li>
-      <li><strong>Google Firebase Remote Config and Authentication:</strong> the game downloads game-balance values (for example how often ads may appear) using an anonymous Firebase user ID; no name or email is involved.</li>
+      <li><strong>Google Firebase Remote Config and Authentication:</strong> the game downloads game-balance values (for example how often ads may appear) using an anonymous Firebase user ID; no name or email is involved. When you sign in to Google Play Games, this anonymous ID is linked to your Play Games player ID so that the same ID is used on a new phone; Firebase does not receive your gamer name or picture.</li>
       <li><strong>Google Firebase Cloud Messaging:</strong> if you allow notifications, a messaging token lets us send occasional game announcements to all players; it is not linked to your identity.</li>
     </ul>
   </section>
